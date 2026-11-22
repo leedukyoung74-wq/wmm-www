@@ -1,0 +1,22 @@
+/* WMM light skin (2026-11-22): 대표 지시 '바탕은 흰색'. 짙은 구간을 흰/연회색 바탕 + 남색 글자로. 사진 히어로·이미지는 그대로. */
+:root{--wl-bg:#FFFFFF;--wl-bg2:#F5F6F8;--wl-ink:#0B1526;--wl-ink2:#4A5568;--wl-line:#E3E7ED;--wl-gold:#B7800F}
+html body{background:#fff}
+/* 공통: 밝게 바꾸는 구간 */
+header.topbar,header.top,header:not([class]),.wmm-worlds__card--business,.service-card.featured,.commercial-measures,.membership-editorial,.chairman-card,.korea-link,section.intel,.country-panel,.news-panel,
+body>footer,footer:not([class]),section.system,.tracks,.track.main,.prog.feature,section.seven,section.giving,nav.clean-portal,section.dark.section,nav.wr-site-return{
+  background:var(--wl-bg)!important;color:var(--wl-ink)!important;border-color:var(--wl-line)!important;box-shadow:none!important}
+.service-card.featured,.commercial-measures,.membership-editorial,.chairman-card,.korea-link,.country-panel,.news-panel,.tracks,.track.main,.prog.feature,.wmm-worlds__card--business{background:var(--wl-bg2)!important}
+section.intel,section.system,section.seven,section.giving,body>footer,footer:not([class]){background:var(--wl-bg2)!important}
+:is(header.topbar,header.top,header:not([class]),.wmm-worlds__card--business,.service-card.featured,.commercial-measures,.membership-editorial,.chairman-card,.korea-link,section.intel,.country-panel,.news-panel,body>footer,footer:not([class]),section.system,.tracks,.track.main,.prog.feature,section.seven,section.giving,nav.clean-portal,section.dark.section,nav.wr-site-return)
+ :is(h1,h2,h3,h4,h5,h6,p,li,dt,dd,small,strong,em,b,span,label,td,th,figcaption,div,a:not([class*=btn]):not([class*=button]):not(.cta)){color:inherit!important;border-color:var(--wl-line)!important}
+:is(section.intel,section.system,section.seven,section.giving,.membership-editorial,.commercial-measures,.korea-link,.chairman-card) :is(p,li,small,dd,span){color:var(--wl-ink2)!important}
+:is(section.intel,section.system,section.seven,section.giving,.membership-editorial,.commercial-measures) :is(h1,h2,h3,h4,strong,b){color:var(--wl-ink)!important}
+/* 로고: 흰 로고는 밝은 바탕에서 반전 */
+:is(header.topbar,header.top,header:not([class]),body>footer,footer:not([class]),nav.clean-portal,nav.wr-site-return) img:is([src*=logo],[src*=wmm-mark],[alt*=WMM]):not([src*=black]){filter:invert(1)}
+:is(header.topbar,header.top,header:not([class])){border-bottom:1px solid var(--wl-line)!important}
+:is(header.topbar,header.top) a,:is(header.topbar,header.top) button{color:var(--wl-ink)!important}
+/* 입력칸 */
+:is(section.intel,.country-panel,.news-panel) :is(select,input,button){background:#fff!important;color:var(--wl-ink)!important;border:1px solid var(--wl-line)!important}
+.promise-band{background:var(--wl-bg2)!important;color:var(--wl-ink)!important}
+.promise-band :is(h1,h2,h3,h4,strong,b){color:var(--wl-ink)!important}
+.promise-band :is(p,li,span,small){color:var(--wl-ink2)!important}
