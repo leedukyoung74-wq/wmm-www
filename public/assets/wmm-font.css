@@ -1,0 +1,5 @@
+/* 2026-11-22 대표 지시: 모든 글자를 넥슨Lv1고딕으로 (한글·영어) */
+@font-face{font-family:"WMM Nexon Lv1";font-weight:300;font-display:swap;src:url(/fonts/NEXONLv1GothicLight.ttf) format("truetype")}
+@font-face{font-family:"WMM Nexon Lv1";font-weight:400;font-display:swap;src:url(/fonts/NEXONLv1GothicRegular.ttf) format("truetype")}
+@font-face{font-family:"WMM Nexon Lv1";font-weight:700;font-display:swap;src:url(/fonts/NEXONLv1GothicBold.ttf) format("truetype")}
+html body,html body *:not(code):not(pre):not(kbd):not(samp){font-family:"WMM Nexon Lv1","NEXON Lv1 Gothic","Apple SD Gothic Neo","Malgun Gothic",sans-serif!important}
