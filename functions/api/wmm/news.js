@@ -28,6 +28,19 @@ async function gnews(country, topic) {
     return { title, url: un(pick(it, "link")), domain, seendate: ts(new Date(pick(it, "pubDate"))) };
   });
 }
+async function bing(country, topic) {
+  const q = `${country}${GN[topic] ? " " + GN[topic].trim().split(" OR ")[0] : ""}`;
+  const r = await fetch("https://www.bing.com/news/search?format=rss&setlang=en-US&mkt=en-US&q=" + encodeURIComponent(q), { headers: { "user-agent": "Mozilla/5.0 (WMM-www)" } });
+  if (!r.ok) throw new Error("bing " + r.status);
+  const x = await r.text();
+  const pick = (s, t) => { const m = s.match(new RegExp("<" + t + "[^>]*>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?</" + t + ">")); return m ? m[1].trim() : ""; };
+  const un = (s) => s.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+  return (x.match(/<item>[\s\S]*?<\/item>/g) || []).slice(0, 20).map((it) => {
+    let url = un(pick(it, "link")); try { const u = new URL(url).searchParams.get("url"); if (u) url = u; } catch {}
+    let domain = ""; try { domain = new URL(url).hostname.replace(/^www\./, ""); } catch {}
+    return { title: un(pick(it, "title")), url, domain: un(pick(it, "News:Source")) || domain, seendate: ts(new Date(pick(it, "pubDate"))) };
+  }).filter((a) => a.title && a.url);
+}
 export const onRequestGet = async ({ request, waitUntil }) => {
   const q = new URL(request.url).searchParams;
   const country = (q.get("country") || "").replace(/[^\p{L}\p{N} .'-]/gu, "").slice(0, 60);
@@ -37,16 +50,17 @@ export const onRequestGet = async ({ request, waitUntil }) => {
   const hit = await cache.match(ck);
   let old = null;
   if (hit) { old = await hit.json(); if (Date.now() - old.fetched < 3600e3) return json({ ...old, stale: false, cached: true }); }
-  for (const [name, fn] of [["gdelt", gdelt], ["googlenews", gnews]]) {
+  const errs = [];
+  for (const [name, fn] of [["gdelt", gdelt], ["bing", bing], ["googlenews", gnews]]) {
     try {
       const articles = await fn(country, topic);
-      if (!articles.length && name === "gdelt") continue;
+      if (!articles.length && name !== "googlenews") continue;
       const out = { fetched: Date.now(), stale: false, source: name, articles };
       const put = cache.put(ck, new Response(JSON.stringify(out), { headers: { "cache-control": "max-age=86400" } }));
       if (waitUntil) waitUntil(put); else await put;
       return json(out);
-    } catch {}
+    } catch (e) { errs.push(name + ":" + String(e && e.message || e).slice(0, 40)); }
   }
   if (old) return json({ ...old, stale: true });
-  return json({ error: "provider_unavailable" }, 502);
+  return json({ error: "provider_unavailable", tried: errs }, 502);
 };
