@@ -3,3 +3,9 @@
 @font-face{font-family:"WMM Nexon Lv1";font-weight:400;font-display:swap;src:url(/fonts/NEXONLv1GothicRegular.ttf) format("truetype")}
 @font-face{font-family:"WMM Nexon Lv1";font-weight:700;font-display:swap;src:url(/fonts/NEXONLv1GothicBold.ttf) format("truetype")}
 html body,html body *:not(code):not(pre):not(kbd):not(samp){font-family:"WMM Nexon Lv1","NEXON Lv1 Gothic","Apple SD Gothic Neo","Malgun Gothic",sans-serif!important}
+/* 한글 줄바꿈: 단어 중간에서 끊지 않기 */
+html body{word-break:keep-all;overflow-wrap:break-word;line-break:strict}
+html body :is(h1,h2,h3,h4){text-wrap:balance}
+html body :is(p,li,dd,small){text-wrap:pretty}
+/* 바닥글 로고가 흐리게 보이던 문제 */
+footer img.footer-logo-white{filter:none!important;opacity:1!important}

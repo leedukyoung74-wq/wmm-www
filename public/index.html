@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>WORLD MAKING MEMBERS · 네 개의 문</title>
-<meta name="description" content="월드메이킹멤버스(WMM) — 아이디어를 시험하고, 세계 정부의 공고를 확인하고, 한 팀으로 실행하고, 그 결실을 나눕니다.">
+<meta name="description" content="월드메이킹멤버스(WMM) — 아이디어를 시험하고, 세계 정부의 공고를 확인하고,<br>한 팀으로 실행하고, 그 결실을 나눕니다.">
 <link rel="canonical" href="https://www.wmm-hoa.com/">
 <link rel="icon" href="/app/icon-192.png">
 <meta property="og:title" content="WORLD MAKING MEMBERS · 네 개의 문">
@@ -35,7 +35,7 @@ a{color:inherit}
 #heroMap{position:absolute;inset:0;width:100%;height:100%}
 .hero-in{position:relative;max-width:1180px;margin:0 auto}
 .hero h1{margin:0;font-weight:700;font-size:clamp(44px,7vw,100px);line-height:1.05;letter-spacing:-.03em;text-wrap:balance}
-.hero p.lead{margin:24px 0 0;font-size:clamp(18px,1.6vw,22px);color:var(--ink2);max-width:36em;font-weight:300}
+.hero p.lead{margin:24px 0 0;font-size:clamp(18px,1.6vw,22px);color:var(--ink2);max-width:28em;font-weight:300;position:relative;z-index:1}
 .live{margin-top:28px;display:flex;flex-wrap:wrap;gap:28px;color:var(--ink2);font-size:15px}
 .live b{display:block;color:var(--ink);font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
 .doors{max-width:calc(1180px + 2*max(16px,env(safe-area-inset-left,0px)));margin:0 auto;padding-bottom:88px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
@@ -80,7 +80,7 @@ a{color:inherit}
   <svg id="heroMap" aria-hidden="true"></svg>
   <div class="hero-in">
     <h1 data-t="h1">세계로 가는 길,<br>네 개의 문.</h1>
-    <p class="lead" data-t="lead">아이디어를 시험하고, 세계 정부의 공고를 확인하고, 한 팀으로 실행하고, 그 결실을 나눕니다.</p>
+    <p class="lead" data-t="lead">아이디어를 시험하고, 세계 정부의 공고를 확인하고,<br>한 팀으로 실행하고, 그 결실을 나눕니다.</p>
     <div class="live"><div><b>193</b><span data-t="k1">개국 정부 정보</span></div><div><b id="kT">–</b><span data-t="k2">건 열린 입찰</span></div></div>
   </div>
 </section>
@@ -103,7 +103,7 @@ a{color:inherit}
   </a>
 </nav>
 </main>
-<footer class="foot wrap"><div class="in"><strong>WORLD MAKING MEMBERS</strong><span>월드메이킹멤버스 주식회사 · 통신판매업신고 제2024-서울서초-2185호 · <a href="mailto:73036396@naver.com">73036396@naver.com</a> · leedukyoung74@gmail.com</span></div></footer>
+<footer class="foot wrap"><div class="in"><strong>WORLD MAKING MEMBERS</strong><span><span data-t="biz">월드메이킹멤버스 주식회사 · 통신판매업신고 제2024-서울서초-2185호</span> · <a href="mailto:73036396@naver.com">73036396@naver.com</a> · leedukyoung74@gmail.com</span></div></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
 <script>
@@ -112,7 +112,7 @@ var T={ko:null,en:{n1:"About",n2:"Membership",n3:"Contact",h1:"The way to the wo
  s1:"Door one · Test",d1:"Pick an idea, write a one-page plan, act for seven days. Free, no sign-up.",cc:"Concept image",g1:"Open the playground →",
  s2:"Door two · Check",d2:"One world map. Tap a country to see its agenda, tenders and risks.",g2:"Open the map →",
  s3:"Door three · Deliver",n3h:"WMM, one team",d3:"Diagnosis, English documents, market tests, proposals and sales as one team. Membership ₩20,000/month (VAT excl.).",g3:"Enter →",cc3:"Concept image",
- s4:"Door four · Share",d4:"Good work funded by part of our revenue. In preparation; we accept no donations.",g4:"See the plan →"}};
+ s4:"Door four · Share",d4:"Good work funded by part of our revenue. In preparation; we accept no donations.",g4:"See the plan →",biz:"WORLD MAKING MEMBERS Co., Ltd. · Online Sales Registration No. 2024-Seoul Seocho-2185"}};
 var KO={};document.querySelectorAll("[data-t]").forEach(function(e){KO[e.dataset.t]=e.innerHTML});T.ko=KO;
 var L=/[?&]lang=en/.test(location.search)?"en":"ko";try{if(!/[?&]lang=/.test(location.search)&&localStorage.getItem("wmm.lang")==="en")L="en"}catch(e){}
 function apply(){document.documentElement.lang=L;document.querySelectorAll("[data-t]").forEach(function(e){var v=T[L][e.dataset.t];if(v!=null)e.innerHTML=v});
