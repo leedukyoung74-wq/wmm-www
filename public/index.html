@@ -89,13 +89,13 @@ a{color:inherit}
     <div class="pic" style="background-image:url(/doors/hero-people-photo.webp)"></div>
     <div class="txt"><span class="step" data-t="s1">첫째 문 · 시험하기</span><h2>WMM PLAYGROUND</h2><p data-t="d1">아이디어 고르기부터 한 장 기획서, 7일 실천까지. 무료, 가입 없이.</p><span class="go" data-t="g1">놀이터 열기 →</span></div>
   </a>
-  <a class="door main" href="https://radar.wmm-hoa.com/map/" id="dRadar">
+  <a class="door main" href="/radar-entry/" id="dRadar">
     <div class="pic" style="background-image:url(/doors/door-radar.webp);background-color:#1A3260;background-size:auto 100%"></div>
-    <div class="txt"><span class="step" data-t="s2">둘째 문 · 확인하기</span><h2>GOV RADAR</h2><p data-t="d2">세계지도 한 장. 나라를 누르면 정부 과제, 입찰, 위험이 모두 열립니다.</p><span class="go" data-t="g2">지도 열기 →</span></div>
+    <div class="txt"><span class="step" data-t="s2">둘째 문 · 확인하기</span><h2>GOV RADAR</h2><p data-t="d2">세계 각국의 정부 과제와 입찰, 국가별 위험 정보를 살펴보세요.</p><span class="go" data-t="g2">서비스 소개 보기 →</span></div>
   </a>
   <a class="door" href="/home.html">
     <div class="pic" style="background-image:url(/doors/wmm-team-photo.webp)"></div>
-    <div class="txt"><span class="step" data-t="s3">셋째 문 · 실행하기</span><h2 data-t="n3h">WMM 한 팀</h2><p data-t="d3">진단, 영문 서류, 시장 검증, 제안, 영업까지 한 팀으로. 회원은 월 20,000원(VAT 별도).</p><span class="go" data-t="g3">들어가기 →</span></div>
+    <div class="txt"><span class="step" data-t="s3">셋째 문 · 실행하기</span><h2 data-t="n3h">WMM 한 팀</h2><p data-t="d3">지원사업 찾기부터 신청 준비, 사업 진단과 해외 진출까지.</p><span class="go" data-t="g3">WMM 홈페이지 →</span></div>
   </a>
   <a class="door" href="/membership/">
     <div class="pic" style="background-image:url(/doors/logo-wmm-miracles-gold.webp)"></div>
@@ -110,14 +110,14 @@ a{color:inherit}
 (function(){
 var T={ko:null,en:{n1:"About",n2:"Membership",n3:"Contact",h1:"The way to the world,<br>four doors.",lead:"Test an idea, check what governments are buying, deliver as one team, and share what it earns.",k1:"countries covered",k2:"open tenders",
  s1:"Door one · Test",d1:"Pick an idea, write a one-page plan, act for seven days. Free, no sign-up.",cc:"Concept image",g1:"Open the playground →",
- s2:"Door two · Check",d2:"One world map. Tap a country to see its agenda, tenders and risks.",g2:"Open the map →",
- s3:"Door three · Deliver",n3h:"WMM, one team",d3:"Diagnosis, English documents, market tests, proposals and sales as one team. Membership ₩20,000/month (VAT excl.).",g3:"Enter →",cc3:"Concept image",
+ s2:"Door two · Check",d2:"Explore government priorities, public tenders and country risk information.",g2:"Explore GOV RADAR →",
+ s3:"Door three · Deliver",n3h:"WMM, one team",d3:"Prepare to find public support, assess your business, and enter new markets.",g3:"Open the WMM homepage →",cc3:"Concept image",
  s4:"Door four · Share",d4:"Good work funded by part of our revenue. In preparation; we accept no donations.",g4:"See the plan →",biz:"WORLD MAKING MEMBERS Co., Ltd. · Online Sales Registration No. 2024-Seoul Seocho-2185"}};
 var KO={};document.querySelectorAll("[data-t]").forEach(function(e){KO[e.dataset.t]=e.innerHTML});T.ko=KO;
 var L=/[?&]lang=en/.test(location.search)?"en":"ko";try{if(!/[?&]lang=/.test(location.search)&&localStorage.getItem("wmm.lang")==="en")L="en"}catch(e){}
 function apply(){document.documentElement.lang=L;document.querySelectorAll("[data-t]").forEach(function(e){var v=T[L][e.dataset.t];if(v!=null)e.innerHTML=v});
  document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===L)});
- document.getElementById("dRadar").href="https://radar.wmm-hoa.com/map/"+(L==="en"?"en/":"");
+ document.getElementById("dRadar").href="/radar-entry/"+(L==="en"?"en/":"");
  document.querySelectorAll('a[href^="/home.html"],a[href^="/membership/"]').forEach(function(a){var u=a.getAttribute("href").split("#");a.setAttribute("href",u[0].split("?")[0]+(L==="en"?"?lang=en":"?lang=ko")+(u[1]?"#"+u[1]:""))})}
 document.querySelectorAll(".lang button").forEach(function(b){b.onclick=function(){L=b.dataset.l;try{localStorage.setItem("wmm.lang",L)}catch(e){}apply()}});
 apply();
