@@ -258,3 +258,35 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
   .btn{white-space:normal;text-align:center}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* 아이템 다시 쓰기 */
+.rewrite{margin-top:96px}
+.rewrite h3{font-size:clamp(22px,2.4vw,30px);margin-bottom:24px}
+.rw{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:0;border-radius:10px;overflow:hidden}
+.rw>div{padding:30px 32px}
+.rw span{display:block;font-size:14px;font-weight:700;margin-bottom:10px}
+.rw p{font-size:18px;line-height:1.7}
+.rw-before{background:var(--tone);color:var(--muted)}
+.rw-after{background:var(--ink);color:#fff}
+.rw-after span{color:#FF8A8F}
+.rw-keys{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.rw-keys li{font-size:15px;color:var(--muted)}
+.rw-keys b{display:block;font-size:17px;color:var(--ink);margin-bottom:2px}
+/* 사업비 */
+.budget{background:var(--tone)}
+.spend{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:20px}
+.spend>div{background:#fff;border-radius:10px;padding:32px;min-width:0}
+.spend h3{margin-bottom:14px}
+.spend ul{list-style:none;margin:0;padding:0;columns:2;column-gap:28px}
+.spend-no ul{columns:1}
+.spend li{padding:10px 0 10px 26px;border-top:1px solid var(--line);position:relative;break-inside:avoid;font-size:16px}
+.spend-yes li::before{content:"○";position:absolute;left:0;color:var(--ink);font-weight:700}
+.spend-no li::before{content:"×";position:absolute;left:2px;color:var(--seal);font-weight:700}
+.combo{margin-top:28px;font-size:17px;font-weight:700;max-width:52em}
+@media (max-width:860px){
+  .rewrite{margin-top:72px}
+  .rw,.spend{grid-template-columns:minmax(0,1fr)}
+  .rw>div{padding:24px}
+  .rw-keys{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .spend ul{columns:1}
+}
