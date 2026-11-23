@@ -1,0 +1,175 @@
+{
+  "checkedOn": "2026-11-23",
+  "notices": [
+    {
+      "id": "ddm-venture-academy-11",
+      "title": "제11차 DDM 벤처스타트업 아카데미 · 스타트업 마케팅",
+      "region": "서울",
+      "category": "training",
+      "audience": ["founder", "solo", "business"],
+      "agency": "DDM 청년창업센터 유니콘",
+      "start": "2026-11-18",
+      "end": "2026-11-27",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179835&schM=view",
+      "summary": "스타트업 마케팅에 관심 있는 누구나 신청할 수 있는 무료 강의입니다. 11월 27일 오후 3시에 서울 동대문구에서 진행하며 정원 내 선착순입니다."
+    },
+    {
+      "id": "PBLN_000000000127990",
+      "title": "2026년 디지털오픈랩 IR 데모데이 참여기업 모집",
+      "region": "경기",
+      "category": "startup",
+      "audience": ["business"],
+      "agency": "경기도경제과학진흥원",
+      "start": "2026-11-16",
+      "end": "2026-11-27",
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000127990",
+      "summary": "경기도 소재 업력 7년 미만 AI·ICT 기술창업기업에 투자 발표, 멘토링과 투자자 교류 기회를 제공합니다."
+    },
+    {
+      "id": "PBLN_000000000127905",
+      "title": "이천시 2026년 6차 해외규격인증 지원사업",
+      "region": "경기",
+      "category": "export",
+      "audience": ["business"],
+      "agency": "경기도경제과학진흥원",
+      "start": "2026-11-12",
+      "end": "2026-11-30",
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000127905",
+      "summary": "이천에 본사 또는 공장을 둔 중소 제조기업 중 2025년 직접 수출액이 2,000만 달러 이하인 기업을 대상으로 이미 취득한 해외규격인증 비용을 지원합니다."
+    },
+    {
+      "id": "PBLN_000000000127985",
+      "title": "대전 산업단지 에너지효율 컨설팅 지원기업 모집",
+      "region": "대전",
+      "category": "operations",
+      "audience": ["business"],
+      "agency": "대전테크노파크",
+      "start": "2026-11-17",
+      "end": "2026-11-30",
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000127985",
+      "summary": "대전 제1·2 일반산업단지에서 가동 중이고 노후설비 등 공고 요건을 충족하는 중소·중견기업에 에너지 현장 진단과 효율 개선 자문을 제공합니다."
+    },
+    {
+      "id": "PBLN_000000000128042",
+      "title": "대전 2026년 6차 해외규격인증 획득지원사업",
+      "region": "대전",
+      "category": "export",
+      "audience": ["business"],
+      "agency": "대전일자리경제진흥원",
+      "start": "2026-11-19",
+      "end": "2026-12-03",
+      "url": "https://bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000128042",
+      "summary": "대전에 본사 또는 공장을 둔 중소 제조기업 중 공고가 정한 기간 안에 해외규격인증을 취득한 기업에 시험비와 인증비 등 관련 비용을 지원합니다."
+    },
+    {
+      "id": "PBLN_000000000127755",
+      "title": "2026년 산업통상부·공공연구기관·대학 기술나눔",
+      "region": "전국",
+      "category": "technology",
+      "audience": ["business"],
+      "agency": "한국산업기술진흥원",
+      "start": "2026-11-06",
+      "end": "2026-12-09",
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000127755",
+      "summary": "중소·중견기업에 공공연구기관과 대학의 특허기술을 무상으로 이전하거나 실시권을 부여합니다."
+    },
+    {
+      "id": "PBLN_000000000126978",
+      "title": "충북 2026년 4분기 청년 소상공인 창업응원금",
+      "region": "충북",
+      "category": "funding",
+      "audience": ["solo", "business"],
+      "agency": "충청북도기업진흥원",
+      "start": "2026-10-01",
+      "end": "2026-12-18",
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000126978",
+      "summary": "충북에 거주하며 도내에서 사업장을 운영하는 19~39세 청년 소상공인 중 창업 7년 이내가 대상입니다. 선착순이므로 접수 가능 여부를 확인하세요."
+    },
+    {
+      "id": "seoul-climate-tech-mentoring-2026",
+      "title": "2026년 서울 기후테크 기업·예비창업자 멘토링",
+      "region": "서울",
+      "category": "startup",
+      "audience": ["founder", "solo", "business"],
+      "agency": "서울기후테크산업지원센터",
+      "start": "2026-07-07",
+      "end": "2026-12-31",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=178445&schM=view",
+      "summary": "서울에 주소지를 둔 예비창업자 또는 서울에 본사나 지사를 둔 녹색 분야 중소기업에 무료 멘토링을 제공합니다. 예산이 소진되면 접수를 마감합니다."
+    },
+    {
+      "id": "energy-voucher-2026",
+      "title": "2026년도 에너지바우처",
+      "region": "전국",
+      "category": "funding",
+      "audience": ["household"],
+      "agency": "한국에너지공단",
+      "start": "2026-06-15",
+      "end": "2026-12-31",
+      "url": "https://www.energyv.or.kr/info/support_info.do",
+      "summary": "기초생활보장 급여 수급 가구 중 세대원 특성 기준도 충족하는 가구를 위한 냉난방 에너지이용권입니다. 복지로나 읍·면·동 행정복지센터에서 신청합니다."
+    },
+    {
+      "id": "PBLN_000000000127869",
+      "title": "평창군 2026년 생계형 1인 자영업자 사회보험료 지원",
+      "region": "강원",
+      "category": "operations",
+      "audience": ["solo"],
+      "agency": "평창군",
+      "start": null,
+      "end": null,
+      "url": "https://bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000127869",
+      "summary": "본인 명의로 평창군에서 사업을 운영 중인 1인 자영업자에게 해당 보험 가입 요건에 따라 국민연금·고용·산재보험료를 지원합니다. 공식 목록은 상시 접수로 안내합니다."
+    },
+    {
+      "id": "work24-uninsured-maternity-benefit",
+      "title": "고용보험 미적용자 출산급여",
+      "region": "전국",
+      "category": "funding",
+      "audience": ["solo", "household"],
+      "agency": "고용노동부",
+      "start": null,
+      "end": null,
+      "url": "https://www.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000250&systId=SI00000390",
+      "summary": "출산휴가급여를 받지 못하는 소득활동 출산여성 중 요건을 충족한 1인 사업자·프리랜서 등이 대상입니다. 출산일로부터 1년 이내에 신청합니다."
+    }
+  ],
+  "portals": [
+    {
+      "name": "K-Startup 모집 중 공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do",
+      "description": "예비·초기·도약 단계에 맞는 사업화, 교육, 멘토링과 입주 공간을 찾습니다.",
+      "audience": ["founder", "solo", "business"]
+    },
+    {
+      "name": "소상공인24",
+      "url": "https://www.sbiz24.kr/#/pbanc",
+      "description": "소상공인시장진흥공단 지원사업을 찾고 공고별 신청 방법을 확인합니다.",
+      "audience": ["solo", "business"]
+    },
+    {
+      "name": "기업마당 지원사업 공고",
+      "url": "https://bizinfo.go.kr/sii/siia/selectSIIA200View.do",
+      "description": "중소기업의 금융·기술·인력·수출·경영 공고를 찾고 수행기관의 신청 방법을 확인합니다.",
+      "audience": ["founder", "solo", "business"]
+    },
+    {
+      "name": "고용24",
+      "url": "https://www.work24.go.kr/",
+      "description": "국민내일배움카드, 취업 지원, 고용보험과 출산급여 제도를 확인합니다.",
+      "audience": ["solo", "business", "household"]
+    },
+    {
+      "name": "정부24 혜택알리미",
+      "url": "https://plus.gov.kr/portal/benefitV2/benefitEasyFind/",
+      "description": "개인과 가구의 상황에 맞는 생활 혜택을 찾고 서비스별 신청 방법을 확인합니다.",
+      "audience": ["solo", "household"]
+    },
+    {
+      "name": "복지로 복지서비스 찾기",
+      "url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52005M.do",
+      "description": "생계·주거·돌봄·양육 복지서비스를 검색하고 온라인 신청 가능 여부를 확인합니다.",
+      "audience": ["household"]
+    }
+  ]
+}
