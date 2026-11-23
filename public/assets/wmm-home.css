@@ -15,6 +15,7 @@ p{margin:0}
 .pad{padding-block:120px}
 .pad-s{padding-block:72px}
 section{scroll-margin-top:72px}
+@media (max-width:1080px){section{scroll-margin-top:112px}}
 
 /* 버튼 */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:999px;border:2px solid transparent;font:inherit;font-size:16px;font-weight:700;text-decoration:none;cursor:pointer;transition:background .15s,color .15s,border-color .15s;white-space:nowrap}
@@ -208,7 +209,10 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
 
 /* 반응형 */
 @media (max-width:1080px){
-  .nav{display:none}
+  .top-in{flex-wrap:wrap;row-gap:0}
+  .nav{order:3;width:100%;margin:0;gap:22px;overflow-x:auto;padding:4px 0 12px;scrollbar-width:none}
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{white-space:nowrap;font-size:15px}
   .top-act{margin-left:auto}
   .notices{grid-template-columns:repeat(2,minmax(0,1fr))}
   .fam{grid-template-columns:repeat(2,minmax(0,1fr))}
