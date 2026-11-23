@@ -115,7 +115,7 @@ function start() {
     active = notice;
     const link = $("selected-source");
     const source = httpLink(notice?.url);
-    $("selected-notice").textContent = notice?.title ?? "위에서 관심 공고를 선택하면 준비표에 표시됩니다.";
+    $("selected-notice").textContent = notice?.title ?? "위 공고에서 ‘이 공고 준비하기’를 누르면 여기에 표시됩니다.";
     link.hidden = !source;
     if (source) link.href = source;
     const saved = get(defaultChecklistKey + (notice ? ":" + notice.id : ""), []);
@@ -200,8 +200,8 @@ function start() {
   selectNotice();
   $("download-checklist").addEventListener("click", () => {
     const items = checklist.map((item) => (item.checked ? "[x] " : "[ ] ") + item.parentElement.textContent.trim());
-    save("WMM-지원사업-신청준비표.txt", [
-      "WMM 지원사업 신청 준비표", active?.title ?? "공고명: __________________", active?.url ?? "", "",
+    save("WMM-지원사업-신청점검표.txt", [
+      "WMM 지원사업 신청 전 점검표", active?.title ?? "공고명: __________________", active?.url ?? "", "",
       ...items, "", "최종 자격과 제출서류는 기관의 공식 공고에서 확인하세요."
     ].join("\r\n"));
   });
@@ -209,12 +209,12 @@ function start() {
   $("business-plan").addEventListener("submit", (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    save("WMM-1장-사업계획서-초안.txt", [
-      "WMM 1장 사업계획서 초안", "사업명: " + data.get("name").trim(), "",
-      "1. 고객과 문제\n" + data.get("problem").trim(),
-      "2. 해결 방법\n" + data.get("solution").trim(),
-      "3. 시장과 실행 계획\n" + data.get("growth").trim(),
-      "4. 팀과 검증 자료\n" + (data.get("team").trim() || "작성 필요"), "",
+    save("WMM-PSST-사업계획서-초안.txt", [
+      "WMM PSST 사업계획서 초안", "사업(아이템)명: " + data.get("name").trim(), "",
+      "1. 문제 인식 (Problem)\n" + data.get("problem").trim(),
+      "2. 실현 가능성 (Solution)\n" + data.get("solution").trim(),
+      "3. 성장 전략 (Scale-up)\n" + data.get("growth").trim(),
+      "4. 팀 구성 (Team)\n" + (data.get("team").trim() || "작성 필요"), "",
       "제출 전 공고별 신청 양식, 분량, 증빙과 마감 시각을 확인하세요."
     ].join("\r\n\r\n"));
     const message = $("plan-status");
