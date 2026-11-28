@@ -26,7 +26,7 @@ var D={"회사소개서 PDF":"Company profile (PDF)","월드메이킹멤버스 �
 "우리 기업에 맞는 범위부터.":"Start with the right scope.","제품·서비스 자료, 목표 국가, 원하는 결과를 알려 주시면 진단 범위와 진행 조건을 안내합니다.":"Tell us about your products or services, target country and goals, and we will propose the assessment scope and terms.",
 "기업명 / 프로젝트":"Company / project","대상 국가":"Target country","희망 서비스":"Service","영문 기업서류":"English company documents","GCSME 공식레터":"GCSME official letter","분야별 프로젝트":"Sector project","멤버십":"Membership",
 "자료·원하는 결과·일정":"Materials, desired results and timing","이메일 앱에서 보내기":"Send from your email app","입력 내용은 저장되지 않습니다. 이메일 앱에서 직접 보내 주세요.":"Nothing you type is stored. Please send it from your email app.",
-"월드메이킹멤버스 주식회사":"World Making Members Co., Ltd.","WMM 홈":"WMM home","정부지원사업":"Government support","개인정보 안내":"Privacy","73036396@naver.com · 통신판매업신고 제2024-서울서초-2185호":"73036396@naver.com · Mail-order registration No. 2024-Seoul Seocho-2185"};
+"월드메이킹멤버스 주식회사":"World Making Members Co., Ltd.","WMM 홈":"WMM home","정부지원사업":"Government support","개인정보 안내":"Privacy","leedukyoung74@gmail.com · 통신판매업신고 제2024-서울서초-2185호":"leedukyoung74@gmail.com · Mail-order registration No. 2024-Seoul Seocho-2185"};
 document.documentElement.lang="en";document.title="Company profile | WMM World Making Members";
 var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n,l=[];while(n=w.nextNode())l.push(n);
 l.forEach(function(t){var k=t.nodeValue.replace(/\s+/g," ").trim();if(k&&D[k])t.nodeValue=t.nodeValue.match(/^\s*/)[0]+D[k]+t.nodeValue.match(/\s*$/)[0]});

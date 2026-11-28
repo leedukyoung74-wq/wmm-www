@@ -9,7 +9,7 @@ const GN = { all: "", conflict: " war OR conflict", food: " food security OR fam
 const ts = (d) => (isNaN(d) ? "" : d.toISOString().replace(/[-:]/g, "").replace(/\.\d+Z$/, "Z"));
 async function gdelt(country, topic) {
   const q = `"${country}"${TOPIC[topic] ? " " + TOPIC[topic] : ""} sourcelang:english`;
-  const r = await fetch("https://api.gdeltproject.org/api/v2/doc/doc?mode=artlist&format=json&maxrecords=20&sort=datedesc&timespan=24h&query=" + encodeURIComponent(q), { headers: { "user-agent": "WMM-www/1.0 (73036396@naver.com)" } });
+  const r = await fetch("https://api.gdeltproject.org/api/v2/doc/doc?mode=artlist&format=json&maxrecords=20&sort=datedesc&timespan=24h&query=" + encodeURIComponent(q), { headers: { "user-agent": "WMM-www/1.0 (leedukyoung74@gmail.com)" } });
   const t = await r.text();
   if (!r.ok || !t.trim().startsWith("{")) throw new Error("gdelt");
   return (JSON.parse(t).articles || []).map((a) => ({ title: a.title, url: a.url, domain: a.domain, seendate: a.seendate }));

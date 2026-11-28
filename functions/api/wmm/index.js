@@ -5,7 +5,7 @@ async function grants() {
   const hit = await cache.match(ck);
   if (hit) { const o = await hit.json(); o.cached = true; return o; }
   const src = "https://mss.go.kr/rss/smba/board/310.do";
-  const r = await fetch(src, { headers: { "user-agent": "WMM-www/1.0 (73036396@naver.com)" } });
+  const r = await fetch(src, { headers: { "user-agent": "WMM-www/1.0 (leedukyoung74@gmail.com)" } });
   const xml = await r.text();
   const pick = (s, t) => { const m = s.match(new RegExp("<" + t + ">(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?</" + t + ">")); return m ? m[1].trim() : ""; };
   const REG = "서울 경기 인천 강원 충북 충남 세종 대전 전북 전남 광주 경북 대구 경남 울산 부산 제주".split(" ");

@@ -248,7 +248,7 @@ function start() {
   $("inquiry-email").addEventListener("click", (event) => {
     if (!validateDraft()) { event.preventDefault(); return; }
     const { topic, details } = draft();
-    event.currentTarget.href = "mailto:73036396@naver.com?subject=" + encodeURIComponent(topic) + "&body=" + encodeURIComponent(details);
+    event.currentTarget.href = "mailto:leedukyoung74@gmail.com?subject=" + encodeURIComponent(topic) + "&body=" + encodeURIComponent(details);
   });
   document.querySelectorAll(".local-draft").forEach((fieldset) => { fieldset.disabled = false; });
 

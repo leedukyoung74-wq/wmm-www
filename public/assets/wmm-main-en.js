@@ -14,7 +14,7 @@ var D={"월드메이킹멤버스(WMM)의 모든 서비스를 한 장에 모았�
 "제작·기업 지원":"Production and business support","뭉치고 제작 상품":"Mungchigo production","콘텐츠 상품·작업 예시·견적":"Content products, samples and quotes","제안서·PPT, 웹사이트, 업무자동화 프로젝트":"Proposals and decks, websites and workflow automation projects","비즈니스 스튜디오":"Business Studio",
 "WMM 멤버십":"WMM Membership","M0 무료부터 M5 전략까지, 등급과 이용 범위":"From free M0 to strategic M5: grades and scope",
 "공익과 운영":"Giving and operations","월드미라클메이커스":"World Miracles Makers","준비 중":"Coming soon","자폐 아동 피아노·힐링 지원 등 공익 프로그램 구상":"Planned public-benefit programmes, including piano and healing support for autistic children",
-"GCSME 한국지사":"GCSME Korea Branch","영국 본사 공식 위임 · 해외 네트워크 연결":"Officially authorised by the UK headquarters · international network","73036396@naver.com · 범위와 비용을 먼저 안내":"73036396@naver.com · we confirm scope and cost first",
+"GCSME 한국지사":"GCSME Korea Branch","영국 본사 공식 위임 · 해외 네트워크 연결":"Officially authorised by the UK headquarters · international network","leedukyoung74@gmail.com · 범위와 비용을 먼저 안내":"leedukyoung74@gmail.com · we confirm scope and cost first",
 "법인 설립 · 서울":"Founded in Seoul","193개국":"193 countries","GOV RADAR가 살피는 나라":"Covered by GOV RADAR","영국 본사 공식 한국지사":"Official Korea branch of the UK HQ","한 팀":"One team","조사부터 실행까지 한 창구":"One contact from research to delivery",
 "이덕영":"Duk Young Lee","대표 · GCSME 한국지사장":"CEO · Head of GCSME Korea","대표 인사말":"A message from our CEO",
 "사업을 시작하는 분들이 가장 먼저 부딪히는 벽은 정보가 없어서가 아니라, 무엇부터 해야 할지 모른다는 것입니다.":"The first wall most founders hit is not a lack of information. It is not knowing where to begin.",
@@ -40,7 +40,7 @@ var D={"월드메이킹멤버스(WMM)의 모든 서비스를 한 장에 모았�
 "GOV RADAR 공개":"GOV RADAR launched","193개국 정부 아젠다·입찰·위험 정보를 한곳에서 보는 레이더를 열었습니다.":"Opened a radar showing government agendas, tenders and risks for 193 countries in one place.",
 "정부지원사업 서비스 시작":"Government support service launched","국내·해외 지원사업 검색부터 서류·발표·후속 사업까지 함께하는 서비스를 시작했습니다.":"Launched a service covering Korean and overseas support programmes, from search to documents, pitches and follow-on programmes.",
 "회사 정보":"Company information","회사소개서 PDF":"Company profile (PDF)","상호":"Company","월드메이킹멤버스 주식회사 (WORLD MAKING MEMBERS)":"World Making Members Co., Ltd.","대표":"CEO","업종":"Business","서비스 · 경영컨설팅":"Services · management consulting","설립":"Founded","2021년 12월":"December 2021","통신판매업 신고":"Mail-order registration","제2024-서울서초-2185호":"No. 2024-Seoul Seocho-2185","협력":"Partner","GCSME(Global & Commonwealth SME Club) 한국지사":"GCSME (Global & Commonwealth SME Club) Korea branch","이메일":"Email",
-"월드메이킹멤버스 주식회사":"World Making Members Co., Ltd.","WMM 홈":"WMM home","개인정보 안내":"Privacy","73036396@naver.com · 통신판매업신고 제2024-서울서초-2185호":"73036396@naver.com · Mail-order registration No. 2024-Seoul Seocho-2185"
+"월드메이킹멤버스 주식회사":"World Making Members Co., Ltd.","WMM 홈":"WMM home","개인정보 안내":"Privacy","leedukyoung74@gmail.com · 통신판매업신고 제2024-서울서초-2185호":"leedukyoung74@gmail.com · Mail-order registration No. 2024-Seoul Seocho-2185"
 };
 document.documentElement.lang="en";
 document.title="WMM World Making Members | Find, prepare, build and give back";
