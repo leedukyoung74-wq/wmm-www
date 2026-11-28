@@ -27,5 +27,5 @@ var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n,l=[];while
 l.forEach(function(t){var k=t.nodeValue.replace(/\s+/g," ").trim();if(k&&D[k])t.nodeValue=t.nodeValue.match(/^\s*/)[0]+D[k]+t.nodeValue.match(/\s*$/)[0]});
 var c=document.getElementById('f-country');if(c)c.placeholder="e.g. Korea, United Kingdom";var m=document.getElementById('f-msg');if(m)m.placeholder="e.g. We are a food manufacturer looking for UK buyers.";
 var im=document.querySelector('#give img');if(im)im.alt="Hands on piano keys";
-var r=document.getElementById('f-radar');if(r)r.placeholder='Leave blank if same as reply email';var c=document.querySelector('.mcard');if(c)c.setAttribute('aria-label','WMM membership card');
+var r=document.getElementById('f-radar');if(r)r.placeholder='Leave blank if same as reply email';var c=document.querySelector('.mcard img');if(c)c.alt='WMM membership card';
 })();

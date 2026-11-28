@@ -14,12 +14,10 @@
 <link rel="stylesheet" href="/assets/wmm-main.css?v=2">
 <style>
 .hero2{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:56px;align-items:center}
-.mcard{aspect-ratio:1.586;max-width:100%;width:100%;border-radius:22px;background:#0b0b0c;border:1px solid rgba(217,181,106,.55);box-shadow:0 30px 60px rgba(0,0,0,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px}
-.mcard img{width:34%;height:auto}
-.mcard b{color:#D9B56A;font-size:clamp(14px,1.7vw,21px);letter-spacing:.12em;font-weight:700;margin-top:10px;text-align:center}
-.mcard small{color:#B7862C;font-size:clamp(10px,1vw,12px);letter-spacing:.3em}
+.mcard{margin:0;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.mcard img{display:block;width:100%;height:auto}
 .join-go{display:inline-block;margin-top:12px;font-weight:700;color:var(--ink);border-bottom:2px solid var(--gold)}
-@media(max-width:860px){.hero2{grid-template-columns:1fr;gap:36px}.mcard{max-width:380px}}
+@media(max-width:860px){.hero2{grid-template-columns:1fr;gap:36px}.mcard{max-width:520px}}
 .sub-hero{background:var(--ink);color:#fff;padding-block:88px 72px}
 .sub-hero .name-en{font-size:14px;letter-spacing:.16em;color:var(--gold-l);font-weight:700}
 .sub-hero h1{font-size:clamp(34px,4.6vw,58px);margin-top:14px}
@@ -95,7 +93,7 @@ form.req .note{font-size:13.5px;color:var(--muted)}
     <p class="lead">무료로 둘러보고, 필요할 때 분석 회원으로, 사업이 커지면 실행 파트너로. 하나의 멤버십으로 국내외 사업 준비를 이어 갑니다.</p>
     <div class="hero-act"><a class="btn btn-gold" href="#join">가입 방법 보기</a><a class="btn btn-line" href="#tiers">등급 보기</a></div>
     </div>
-    <div class="mcard" role="img" aria-label="WMM 멤버십 카드"><img src="/membership/membership-mark.webp" alt="" width="318" height="252"><b>WORLD MAKING MEMBERS</b><small>MEMBERSHIP</small></div>
+    <figure class="mcard"><img src="/membership/membership-card.webp" alt="WMM 멤버십 카드" width="1408" height="768"></figure>
   </div>
 </section>
 
@@ -175,6 +173,6 @@ function subj(){return (en?'[WMM membership] ':'[WMM 멤버십 신청] ')+(v('f-
 f.addEventListener('submit',function(e){e.preventDefault();if(!f.reportValidity())return;location.href='mailto:73036396@naver.com?subject='+encodeURIComponent(subj())+'&body='+encodeURIComponent(body());st.textContent=en?'Your email app should open. Press Send there to apply.':'메일 앱이 열리면 보내기를 눌러 주세요. 보내야 접수됩니다.'});
 document.getElementById('copy-btn').addEventListener('click',function(){if(!f.reportValidity())return;var t=subj()+'\n\n'+body();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){st.textContent=en?'Copied. Email it to 73036396@naver.com.':'복사했습니다. 73036396@naver.com으로 보내 주세요.'},function(){st.textContent=t})});
 })();
-</script><script src="/membership/en.js?v=2"></script>
+</script><script src="/membership/en.js?v=3"></script>
 </body>
 </html>
