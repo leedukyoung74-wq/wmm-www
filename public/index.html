@@ -1,135 +1,342 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8"><link rel="icon" type="image/png" sizes="32x32" href="/images/wmm-icon-32.png"><link rel="icon" type="image/png" sizes="512x512" href="/images/wmm-icon-512.png"><link rel="apple-touch-icon" href="/images/wmm-icon-180.png"><meta property="og:image" content="https://www.wmm-hoa.com/images/og-wmm.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://www.wmm-hoa.com/images/og-wmm.jpg">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>WORLD MAKING MEMBERS · 네 개의 문</title>
-<meta name="description" content="월드메이킹멤버스(WMM) — 아이디어를 시험하고, 세계 정부의 공고를 확인하고, 한 팀으로 실행하고, 그 결실을 나눕니다.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WMM 월드메이킹멤버스 | 찾고, 준비하고, 만들고, 나눕니다</title>
+<meta name="description" content="월드메이킹멤버스(WMM)는 정부지원사업과 해외 진출을 준비하는 기업 곁에서 공고 확인부터 서류, 발표, 실행까지 한 팀으로 함께하는 경영컨설팅 회사입니다. GCSME 한국지사 운영.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WMM 월드메이킹멤버스">
+<meta property="og:url" content="https://www.wmm-hoa.com/">
+<meta property="og:description" content="WMM의 모든 서비스를 한 장에 — 찾고, 준비하고, 만들고, 나눕니다.">
+<meta property="og:image" content="https://www.wmm-hoa.com/images/og-wmm.jpg">
 <link rel="canonical" href="https://www.wmm-hoa.com/">
-
-<meta property="og:title" content="WORLD MAKING MEMBERS · 네 개의 문">
-<meta property="og:description" content="시험하고, 확인하고, 실행하고, 나눕니다.">
-
+<link rel="icon" href="/images/wmm-icon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/wmm-icon-180.png">
 <script>
-// 예전 주소(www.wmm-hoa.com/#request 등)로 들어오면 기존 홈페이지의 그 위치로
-(function(){var h=location.hash;if(h&&h.length>1){location.replace("/home.html"+location.search+h)}})();
+// 예전 주소(www.wmm-hoa.com/#request 등)로 들어오면 기존 홈페이지의 그 위치로 (이 페이지 안의 위치는 제외)
+(function(){var h=location.hash,own=["#letter","#gcsme"];if(h&&h.length>1&&own.indexOf(h)<0){location.replace("/home.html"+location.search+h)}})();
 </script>
+<link rel="stylesheet" href="/assets/wmm-font.css">
 <style>
-@font-face{font-family:"NexonLv1";font-weight:300;font-display:swap;src:url(/fonts/NEXONLv1GothicLight.ttf) format("truetype")}
-@font-face{font-family:"NexonLv1";font-weight:400;font-display:swap;src:url(/fonts/NEXONLv1GothicRegular.ttf) format("truetype")}
-@font-face{font-family:"NexonLv1";font-weight:700;font-display:swap;src:url(/fonts/NEXONLv1GothicBold.ttf) format("truetype")}
-:root{--bg:#FFFFFF;--bg2:#F5F6F8;--bg3:#ECEFF3;--ink:#0B1526;--ink2:#4A5568;--ink3:#8A94A6;--line:#E3E7ED;--land:#E9EDF2;--gold:#C8901A;--navy:#0B1526;color-scheme:light}
+:root{--ink:#0B1526;--ink2:#121F35;--paper:#fff;--tone:#F4F2ED;--line:#E2DED5;--muted:#4E5666;--gold:#B7862C;--gold-l:#D9B56A;color-scheme:light}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"NexonLv1","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"WMM Nexon Lv1","NEXON Lv1 Gothic",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:17px;line-height:1.7;word-break:keep-all;overflow-wrap:break-word}
+img{max-width:100%;height:auto;display:block}
 a{color:inherit}
-.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:20px;height:68px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:700;letter-spacing:.02em;font-size:15px;white-space:nowrap}
-.brand img{width:34px;height:34px}
-.sp{flex:1}
-.nav{display:flex;gap:22px;font-size:15px}.nav a{text-decoration:none;color:var(--ink2)}.nav a:hover{color:var(--ink)}
-.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
-.lang button{background:none;border:0;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer;color:var(--ink2)}
-.lang button[aria-pressed=true]{background:var(--navy);color:#fff}
-.hero{position:relative;overflow:hidden;padding-top:72px;padding-bottom:48px}
-#heroMap{position:absolute;inset:0;width:100%;height:100%}
-.hero-in{position:relative;max-width:1180px;margin:0 auto}
-.hero h1{margin:0;font-weight:700;font-size:clamp(44px,7vw,100px);line-height:1.05;letter-spacing:-.03em;text-wrap:balance}
-.hero p.lead{margin:24px 0 0;font-size:clamp(18px,1.6vw,22px);color:var(--ink2);max-width:28em;font-weight:300;position:relative;z-index:1}
-.live{margin-top:28px;display:flex;flex-wrap:wrap;gap:28px;color:var(--ink2);font-size:15px}
-.live b{display:block;color:var(--ink);font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
-.doors{max-width:calc(1180px + 2*max(16px,env(safe-area-inset-left,0px)));margin:0 auto;padding-bottom:88px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.door{display:flex;flex-direction:column;min-height:420px;background:var(--bg2);text-decoration:none;border-radius:4px;overflow:hidden;transition:background .25s,transform .25s}
-.door:hover,.door:focus-visible{background:var(--bg3);outline:none;transform:translateY(-3px)}
-.door .pic{height:200px;background:#0C1626 center/cover no-repeat}
-.door .txt{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
-.door .step{font-size:15px;color:var(--ink3)}
-.door h2{margin:6px 0 10px;font-size:27px;line-height:1.2;font-weight:700;letter-spacing:-.01em}
-.door p{margin:0;color:var(--ink2);font-size:15.5px;flex:1}
-.door .go{margin-top:22px;font-size:15px;font-weight:700}
-.door.main{background:var(--navy);color:#fff}.door.main:hover{background:#16243B}
-.door.main .step,.door.main p{color:#C9D1DD}.door.main .go{color:#F2C063}
-.note{font-size:12px;color:var(--ink3);margin:6px 0 0}
-.foot{border-top:1px solid var(--line);padding-block:32px;color:var(--ink3);font-size:14px}
-.foot .in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:baseline}
-.foot strong{color:var(--ink);font-size:18px;letter-spacing:.02em}
-.foot a{color:var(--ink2)}
-@media (max-width:1000px){.doors{grid-template-columns:repeat(2,1fr)}.door{min-height:360px}.nav{display:none}}
-@media (max-width:640px){
- .bar{height:60px;gap:12px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
- .brand span{display:none}
- .hero{padding-top:200px}
- #heroMap{height:200px;top:12px;bottom:auto}
- .doors{grid-template-columns:1fr;gap:12px;padding-bottom:56px}
- .door{min-height:0;flex-direction:row}
- .door .pic{width:112px;height:auto;flex:none}
- .door .txt{padding:18px}
- .door h2{font-size:21px}
+h1,h2,h3{margin:0;line-height:1.25;letter-spacing:-.015em;text-wrap:balance}
+p{margin:0}
+.shell{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.pad{padding-block:128px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* 머리 */
+.top{position:sticky;top:0;z-index:20;background:var(--ink);color:#fff}
+.top-in{display:flex;align-items:center;gap:28px;min-height:68px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:700;font-size:18px;line-height:1.1}
+.brand small{display:block;font-size:12px;font-weight:400;opacity:.7;margin-top:3px}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:15.5px}
+.nav a{text-decoration:none;opacity:.85}.nav a:hover,.nav a[aria-current]{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--gold-l)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;border-radius:999px;font:inherit;font-size:16px;font-weight:700;text-decoration:none;border:2px solid transparent;white-space:nowrap;transition:background .15s,color .15s}
+.btn-sm{min-height:40px;padding:0 18px;font-size:15px}
+.btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:#9C7224}
+.btn-line{border-color:rgba(255,255,255,.6);color:#fff}.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{background:var(--ink2)}
+
+/* 첫 화면 */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"WMM";position:absolute;right:-2vw;bottom:-6vw;font-size:34vw;font-weight:700;line-height:.8;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1px rgba(217,181,106,.18);pointer-events:none}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:end;padding-top:72px;min-height:min(640px,calc(100vh - 168px))}
+.hero-copy{padding-bottom:96px;align-self:center}
+.hero .name-en{font-size:15px;letter-spacing:.08em;color:var(--gold-l);font-weight:700}
+.hero h1{font-size:clamp(40px,5.4vw,70px);font-weight:700;margin-top:18px;line-height:1.14}
+.hero .lead{font-size:19px;color:rgba(255,255,255,.82);margin-top:26px;max-width:32em}
+.hero-act{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero-pic{position:relative;align-self:end;margin:0}
+.hero-pic::before{content:"";position:absolute;left:10%;right:0;bottom:0;height:78%;background:radial-gradient(closest-side,rgba(217,181,106,.28),transparent);pointer-events:none}.hero-pic img{position:relative;width:auto;max-height:560px;max-width:100%;margin-left:auto}
+.hero-pic figcaption{position:absolute;left:0;bottom:44px;background:#fff;color:var(--ink);padding:14px 20px;border-radius:4px;font-size:14px;line-height:1.4}
+.hero-pic figcaption b{display:block;font-size:19px}
+.facts{position:relative;z-index:1;background:#fff;color:var(--ink)}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.facts li{padding:30px 24px 30px 0;border-right:1px solid var(--line)}
+.facts li+li{padding-left:24px}.facts li:last-child{border-right:0}
+.facts b{display:block;font-size:28px;font-weight:700;letter-spacing:-.02em}
+.facts span{font-size:14.5px;color:var(--muted)}
+
+/* 한 장 지도 */
+.hub{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hub::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 58%,rgba(217,181,106,.16),transparent 42%);pointer-events:none}
+.hub-head{position:relative;text-align:center;padding-top:52px}
+.hub .name-en{font-size:14px;letter-spacing:.16em;color:var(--gold-l);font-weight:700}
+.hub h1{font-size:clamp(32px,4vw,52px);margin-top:10px}
+.hub .lead{font-size:17px;color:rgba(255,255,255,.75);margin:12px auto 0;max-width:40em}
+.compass{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);grid-template-rows:auto auto;gap:20px 40px;padding-block:36px 64px;align-items:stretch}
+.quad{background:rgba(255,255,255,.04);border:1px solid rgba(217,181,106,.22);border-radius:18px;padding:20px 26px;min-width:0;backdrop-filter:blur(2px);transition:border-color .2s,background .2s}
+.quad:hover{border-color:rgba(217,181,106,.6);background:rgba(255,255,255,.06)}
+.q1{grid-column:1;grid-row:1}.q2{grid-column:3;grid-row:1}.q3{grid-column:1;grid-row:2}.q4{grid-column:3;grid-row:2}
+.q2,.q4{text-align:left}
+.quad h2{font-size:22px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:10px;margin-bottom:4px;border-bottom:1px solid rgba(255,255,255,.14)}
+.quad h2 small{font-size:12px;letter-spacing:.2em;color:var(--gold-l);font-weight:700}
+.quad a,.quad .soon{display:block;padding:10px 30px 10px 0;border-bottom:1px solid rgba(255,255,255,.08);text-decoration:none;position:relative}
+.quad a:last-child,.quad .soon:last-child{border-bottom:0}
+.quad a::after{content:"→";position:absolute;right:4px;top:10px;color:var(--gold-l);transition:transform .2s}
+.quad a:hover::after{transform:translateX(4px)}
+.quad b{display:block;font-size:17px}
+.quad span{display:block;font-size:14px;color:rgba(255,255,255,.62);margin-top:2px}
+.quad em{font-style:normal;font-size:11.5px;font-weight:700;color:var(--ink);background:var(--gold-l);border-radius:4px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+.quad .soon{opacity:.7}
+.core{grid-column:2;grid-row:1/3;position:relative;display:grid;place-items:center;align-self:center;aspect-ratio:1}
+.core img{width:58%;position:relative;opacity:.95}
+.core .ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 60s linear infinite}
+.core .ring text{font-size:13px;fill:var(--gold-l);font-weight:700}
+.core::before{content:"";position:absolute;inset:16%;border-radius:50%;border:1px solid rgba(217,181,106,.35)}
+.core::after{content:"";position:absolute;left:-40px;right:-40px;top:50%;height:1px;background:linear-gradient(90deg,rgba(217,181,106,.5),transparent 30%,transparent 70%,rgba(217,181,106,.5))}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:1060px){.compass{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}.core{grid-column:1/-1;grid-row:auto;order:-1;width:220px;margin:0 auto}.core::after{display:none}.q1,.q2,.q3,.q4{grid-column:auto;grid-row:auto}}
+@media(max-width:640px){.compass{grid-template-columns:minmax(0,1fr)}.hub-head{padding-top:56px}.quad{padding:22px}}
+@media(prefers-reduced-motion:reduce){.core .ring{animation:none}}
+
+/* 인사말 */
+.letter{background:var(--tone)}
+.letter-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:80px;align-items:start}
+.letter h2{font-size:clamp(30px,3.6vw,46px)}
+.letter-side p{margin-top:18px;color:var(--muted)}
+.ceo{margin:0 0 32px;position:relative;width:min(260px,70%)}.ceo::before{content:"";position:absolute;left:8%;right:8%;bottom:0;height:62%;border-radius:50% 50% 0 0;background:radial-gradient(closest-side,rgba(183,134,44,.22),transparent);z-index:0}.ceo img{position:relative;z-index:1;width:100%;border-bottom:2px solid var(--gold)}.ceo figcaption{font-size:13.5px;color:var(--muted);margin-top:10px;line-height:1.4}.ceo figcaption b{display:block;font-size:17px;color:var(--ink)}
+
+.letter-body p{font-size:18.5px;line-height:1.9;margin-bottom:22px}
+.letter-body p:first-child::first-letter{font-size:1.1em}
+.sign{display:flex;align-items:center;gap:18px;margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+.sign img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:top;background:#fff}
+.sign b{display:block;font-size:20px}.sign span{font-size:14px;color:var(--muted)}
+
+/* 하는 일 */
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end;margin-bottom:56px}
+.head h2{font-size:clamp(30px,3.6vw,46px)}
+.head p{color:var(--muted)}
+.work{border-top:2px solid var(--ink)}
+.work a{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.5fr) auto;gap:32px;align-items:baseline;padding:34px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:padding .2s}
+.work a:hover{padding-left:12px}
+.work h3{font-size:clamp(22px,2.2vw,28px)}
+.work h3 small{display:block;font-size:14px;color:var(--gold);font-weight:700;margin-top:6px;letter-spacing:.02em}
+.work p{color:var(--muted);font-size:16.5px}
+.work .go{font-weight:700;font-size:15px;white-space:nowrap;border-bottom:2px solid var(--gold);padding-bottom:2px}
+
+/* 원칙 */
+.rule{background:var(--ink);color:#fff}
+.rule .head p{color:rgba(255,255,255,.75)}
+.rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid rgba(255,255,255,.2)}
+.rules div{padding:34px 40px 34px 0;border-bottom:1px solid rgba(255,255,255,.2)}
+.rules div:nth-child(even){padding-left:40px;border-left:1px solid rgba(255,255,255,.2)}
+.rules b{display:block;font-size:21px;margin-bottom:8px}
+.rules b::before{content:"";display:inline-block;width:10px;height:10px;background:var(--gold-l);margin-right:12px;vertical-align:middle;transform:rotate(45deg)}
+.rules p{color:rgba(255,255,255,.75);font-size:16px}
+
+/* GCSME */
+.gc-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}
+.gc-pics{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:end}
+.gc-pics figure{margin:0}
+.gc-pics img{width:100%;border-radius:4px}
+.gc-pics .doc img{border:1px solid var(--line);box-shadow:0 12px 30px rgba(11,21,38,.08)}
+.gc-pics figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.gc h2{font-size:clamp(28px,3.2vw,42px);margin-bottom:20px}
+.gc p{color:var(--muted);margin-bottom:16px}
+.gc .link{font-weight:700;text-decoration:none;border-bottom:2px solid var(--gold)}
+
+/* 연혁 */
+.hist{background:var(--tone)}
+.time{list-style:none;margin:0;padding:0;border-left:2px solid var(--ink);margin-left:8px}
+.time li{position:relative;padding:0 0 40px 40px}
+.time li:last-child{padding-bottom:0}
+.time li::before{content:"";position:absolute;left:-9px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--tone);border:3px solid var(--ink)}
+.time li.now::before{background:var(--gold);border-color:var(--gold)}
+.time b{display:block;font-size:15px;color:var(--gold);letter-spacing:.04em}
+.time h3{font-size:21px;margin-top:4px}
+.time p{color:var(--muted);font-size:16px;margin-top:4px}
+
+/* 회사 정보 */
+.info-in{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px}
+.info h2{font-size:clamp(28px,3.2vw,40px)}
+.info dl{margin:0;border-top:2px solid var(--ink)}
+.info dl div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.info dt{font-weight:700}
+.info dd{margin:0;color:var(--muted)}
+.cta{margin-top:40px;display:flex;flex-wrap:wrap;gap:12px}
+
+.foot{background:#060D19;color:#fff;padding:44px 0}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center;font-size:14px}
+.foot nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+.foot a{text-decoration:none;opacity:.8}
+.foot p{opacity:.6}
+
+@media(max-width:960px){
+  .nav{display:none}
+  .top-act{margin-left:auto}
+  .hero-in,.letter-in,.head,.gc-in,.info-in{grid-template-columns:minmax(0,1fr)}
+  .hero-in{padding-top:56px;gap:0}
+  .hero-copy{padding-bottom:40px}
+  .hero-pic img{max-height:420px;margin:0 auto}
+  .hero-pic figcaption{left:auto;right:0;bottom:30px}
+  .facts ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts li:nth-child(2){border-right:0}
+  .facts li:nth-child(3){padding-left:0}
+  .facts li:nth-child(n+3){border-top:1px solid var(--line)}
+  .pad{padding-block:88px}
+  .letter-in,.gc-in,.info-in{gap:40px}
+  .work a{grid-template-columns:minmax(0,1fr);gap:8px}
+  .rules{grid-template-columns:minmax(0,1fr)}
+  .rules div,.rules div:nth-child(even){padding:28px 0;border-left:0}
 }
+@media(max-width:560px){
+  body{font-size:16px}
+  .brand small{display:none}
+  .hero h1{font-size:36px}
+  .lead{font-size:17px!important}
+  .hero-act .btn{flex:1 1 100%}
+  .facts b{font-size:22px}
+  .letter-body p{font-size:17px}
+  .info dl div{grid-template-columns:minmax(0,1fr);gap:2px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work a{transition:none}}
 </style>
-<link rel="stylesheet" href="/assets/wmm-font.css"></head>
+</head>
 <body>
-<header class="bar">
-  <a class="brand" href="/"><img src="/images/wmm-logo-black.png" alt=""><span>WORLD MAKING MEMBERS</span></a>
-  <div class="sp"></div>
-  <nav class="nav"><a href="/home.html" data-t="n1">회사 소개</a><a href="/membership/" data-t="n2">멤버십</a><a href="/home.html#request" data-t="n3">상담 신청</a></nav>
-  <div class="lang" role="group" aria-label="Language"><button data-l="ko" aria-pressed="true">한국어</button><button data-l="en" aria-pressed="false">EN</button></div>
+<header class="top">
+  <div class="shell top-in">
+    <a class="brand" href="/"><img src="/images/wmm-logo-white.png" width="40" height="40" alt=""><span>WORLD MAKING MEMBERS<small>월드메이킹멤버스</small></span></a>
+    <nav class="nav" aria-label="주 메뉴"><a href="#letter">회사 소개</a><a href="/home?lang=ko">정부지원사업</a><a href="https://radar.wmm-hoa.com/">GOV RADAR</a><a href="/business-studio/">해외 진출</a><a href="/membership/">멤버십</a></nav>
+    <div class="top-act"><a class="btn btn-gold btn-sm" href="/home?lang=ko#request">상담 신청</a></div>
+  </div>
 </header>
+
 <main>
-<section class="hero wrap">
-  <svg id="heroMap" aria-hidden="true"></svg>
-  <div class="hero-in">
-    <h1 data-t="h1">세계로 가는 길,<br>네 개의 문.</h1>
-    <p class="lead" data-t="lead">아이디어를 시험하고, 세계 정부의 공고를 확인하고,<br>한 팀으로 실행하고, 그 결실을 나눕니다.</p>
-    <div class="live"><div><b>193</b><span data-t="k1">개국 정부 정보</span></div><div><b id="kT">–</b><span data-t="k2">건 열린 입찰</span></div></div>
+<section class="hub" aria-labelledby="hub-h">
+  <div class="shell hub-head">
+    <p class="name-en">WORLD MAKING MEMBERS</p>
+    <h1 id="hub-h">찾고, 준비하고, 만들고, 나눕니다.</h1>
+    <p class="lead">월드메이킹멤버스(WMM)의 모든 서비스를 한 장에 모았습니다. 지금 필요한 곳에서 시작하세요.</p>
+  </div>
+  <div class="shell compass">
+    <div class="quad q1">
+      <h2>기회 찾기<small>FIND</small></h2>
+      <a href="/home?lang=ko#support-search"><b>정부지원사업 실행센터</b><span>지역·대상별 검색, 공식 원문과 신청 준비표</span></a>
+      <a href="https://radar.wmm-hoa.com/"><b>GOV RADAR</b><span>해외 정부 사업·입찰 · 상세는 회원가입 후</span></a>
+      <a href="/home-details?lang=ko"><b>WMM 회사 홈페이지</b><span>회사와 그룹 서비스 소개</span></a>
+    </div>
+    <div class="quad q2">
+      <h2>신청과 사업 준비<small>PREPARE</small></h2>
+      <a href="/home?lang=ko#preparation"><b>신청 준비와 사업계획서</b><span>자격·마감·증빙 확인, PSST 초안</span></a>
+      <a href="https://radar.wmm-hoa.com/playground/"><b>WMM 플레이그라운드</b><span>아이디어를 7일 동안 직접 실천</span></a>
+      <div class="soon"><b>AI WORLD <em>미리보기</em></b><span>AI 도구 비교와 업무 지시문</span></div>
+    </div>
+    <div class="core" aria-hidden="true">
+      <svg viewBox="0 0 300 300" class="ring"><defs><path id="rp" d="M150,150 m-122,0 a122,122 0 1,1 244,0 a122,122 0 1,1 -244,0"/></defs><text><textPath href="#rp" textLength="756" lengthAdjust="spacing">WORLD MAKING MEMBERS · FIND · PREPARE · BUILD · GIVE ·</textPath></text></svg>
+      <img src="/images/wmm-logo-white.png" width="787" height="772" alt="">
+    </div>
+    <div class="quad q3">
+      <h2>제작·기업 지원<small>BUILD</small></h2>
+      <div class="soon"><b>뭉치고 제작 상품 <em>미리보기</em></b><span>콘텐츠 상품·작업 예시·견적</span></div>
+      <a href="/business-studio/"><b>Business Studio</b><span>해외 진출 솔루션과 상담</span></a>
+      <a href="/membership/"><b>WMM 멤버십</b><span>M0 무료부터 M5 전략까지, 등급과 이용 범위</span></a>
+    </div>
+    <div class="quad q4">
+      <h2>공익과 운영<small>GIVE</small></h2>
+      <a href="https://radar.wmm-hoa.com/playground/path.html#miracle"><b>월드미라클메이커스 <em>준비 중</em></b><span>자폐 아동 피아노·힐링 지원 등 공익 프로그램 구상</span></a>
+      <a href="#gcsme"><b>GCSME 한국지사</b><span>영국 본사 공식 위임 · 해외 네트워크 연결</span></a>
+      <a href="/home?lang=ko#request"><b>상담 신청</b><span>73036396@naver.com · 범위와 비용을 먼저 안내</span></a>
+    </div>
+  </div>
+  <div class="facts"><div class="shell"><ul>
+      <li><b>2021</b><span>법인 설립 · 서울</span></li>
+      <li><b>193개국</b><span>GOV RADAR가 살피는 나라</span></li>
+      <li><b>GCSME</b><span>영국 본사 공식 한국지사</span></li>
+      <li><b>한 팀</b><span>조사부터 실행까지 한 창구</span></li>
+  </ul></div></div>
+</section>
+
+<section class="letter pad" id="letter" aria-labelledby="letter-h">
+  <div class="shell letter-in">
+    <div class="letter-side">
+      <figure class="ceo"><img src="/about/ceo-lee-duk-young.webp" width="520" height="746" alt="월드메이킹멤버스 이덕영 대표" loading="lazy"><figcaption><b>이덕영</b>대표 · GCSME 한국지사장</figcaption></figure>
+      <h2 id="letter-h">대표 인사말</h2>
+      <p>사업을 시작하는 분들이 가장 먼저 부딪히는 벽은 정보가 없어서가 아니라, 무엇부터 해야 할지 모른다는 것입니다.</p>
+    </div>
+    <div class="letter-body">
+      <p>안녕하십니까. 월드메이킹멤버스 대표 이덕영입니다.</p>
+      <p>정부지원사업 공고는 해마다 수천 건이 나오고, 해외에는 그보다 훨씬 많은 정부 사업과 입찰이 열립니다. 그런데 좋은 기술과 성실한 마음을 가진 대표님들이 서류 한 장, 발표 10분, 믿을 만한 현지 파트너 한 곳이 없어 기회를 놓치는 모습을 많이 보았습니다.</p>
+      <p>WMM은 그 빈자리를 채우려고 만든 회사입니다. 공고를 함께 찾고, 심사위원이 읽는 순서로 사업계획서를 쓰고, 발표를 준비하고, 선정된 다음 해와 해외 시장까지 이어지는 길을 함께 설계합니다. 영국 GCSME 본사의 한국지사로서 세계 각국의 네트워크와도 연결합니다.</p>
+      <p>저희는 결과를 보장한다고 말하지 않습니다. 대신 확인된 사실로 판단하고, 맡은 일의 범위와 비용을 먼저 약속하며, 끝까지 곁에 있겠습니다. 한 기업의 성장이 이웃을 돕는 힘으로 이어지는 일, WMM이 가장 하고 싶은 일입니다.</p>
+      <div class="sign"><div><b>이덕영</b><span>월드메이킹멤버스 주식회사 대표 · GCSME 한국지사장</span></div></div>
+    </div>
   </div>
 </section>
-<nav class="doors wrap" aria-label="WMM">
-  <a class="door" href="https://radar.wmm-hoa.com/playground/">
-    <div class="pic" style="background-image:url(/doors/hero-people-photo.webp)"></div>
-    <div class="txt"><span class="step" data-t="s1">첫째 문 · 시험하기</span><h2>WMM PLAYGROUND</h2><p data-t="d1">아이디어 고르기부터 한 장 기획서, 7일 실천까지. 무료, 가입 없이.</p><span class="go" data-t="g1">놀이터 열기 →</span></div>
-  </a>
-  <a class="door main" href="/radar-entry/" id="dRadar">
-    <div class="pic" style="background-image:url(/doors/door-radar.webp);background-color:#1A3260;background-size:auto 100%"></div>
-    <div class="txt"><span class="step" data-t="s2">둘째 문 · 확인하기</span><h2>GOV RADAR</h2><p data-t="d2">세계 각국의 정부 과제와 입찰, 국가별 위험 정보를 살펴보세요.</p><span class="go" data-t="g2">서비스 소개 보기 →</span></div>
-  </a>
-  <a class="door" href="/home.html">
-    <div class="pic" style="background-image:url(/doors/wmm-team-photo.webp)"></div>
-    <div class="txt"><span class="step" data-t="s3">셋째 문 · 실행하기</span><h2 data-t="n3h">WMM 한 팀</h2><p data-t="d3">정부지원사업 검색부터 사업계획서·발표 준비, 후속 사업까지 한 팀으로. 분석 회원 월 20,000원(VAT 별도).</p><span class="go" data-t="g3">WMM 홈페이지 →</span></div>
-  </a>
-  <a class="door" href="/membership/">
-    <div class="pic" style="background-image:url(/doors/logo-wmm-miracles-gold.webp)"></div>
-    <div class="txt"><span class="step" data-t="s4">넷째 문 · 나누기</span><h2>World Miracles Makers</h2><p data-t="d4">수익의 일부로 하는 선행. 지금은 준비 중이며 후원금은 받지 않습니다.</p><span class="go" data-t="g4">구상 보기 →</span></div>
-  </a>
-</nav>
+
+
+<section class="rule pad" aria-labelledby="rule-h">
+  <div class="shell">
+    <div class="head"><h2 id="rule-h">일하는 원칙</h2><p>고객의 돈과 시간을 쓰는 일이라, 약속할 수 있는 것만 약속합니다.</p></div>
+    <div class="rules">
+      <div><b>확인된 사실로 판단합니다</b><p>핵심 사실은 서로 다른 출처 두 곳 이상에서 확인하고, 확인하지 못한 것은 그렇다고 적습니다.</p></div>
+      <div><b>범위와 비용을 먼저 정합니다</b><p>무엇을, 언제까지, 얼마에 하는지 착수 전에 문서로 합의합니다. 추가 비용은 미리 알려 드립니다.</p></div>
+      <div><b>AI는 빠르게, 판단은 사람이</b><p>AI로 조사와 초안을 빠르게 만들고, 고객에게 가는 모든 결과물은 사람이 검수합니다.</p></div>
+      <div><b>보장하지 않는 것은 말하지 않습니다</b><p>선정·수주·매출은 평가위원과 상대가 결정합니다. 저희는 그 가능성을 높이는 준비를 돕습니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gc pad" id="gcsme" aria-labelledby="gc-h">
+  <div class="shell gc-in">
+    <div class="gc-pics">
+      <figure><img src="/media/chairman.jpg" width="1600" height="1581" alt="GCSME 설립자 겸 회장 Mobin Rafiq" loading="lazy"><figcaption>Mobin Rafiq · GCSME 설립자·회장</figcaption></figure>
+      <figure class="doc"><img src="/media/authorization.png" width="1102" height="1426" alt="GCSME 영국 본사 한국지사 설립·운영 위임장 첫 쪽" loading="lazy"><figcaption>한국지사 위임장 (2026.01.01)</figcaption></figure>
+    </div>
+    <div>
+      <h2 id="gc-h">영국 GCSME 본사의 공식 한국지사</h2>
+      <p>GCSME(Global &amp; Commonwealth SME Club)는 영국 런던에 본사를 둔 중소기업 국제 네트워크입니다. 월드메이킹멤버스는 GCSME 영국 본사의 위임을 받아 한국지사를 설립·운영하며, 이덕영 대표가 한국지사장을 맡고 있습니다.</p>
+      <p>한국 기업이 해외 정부·기관·기업과 만날 때 GCSME 네트워크와 공식레터 절차를 통해 연결을 돕습니다. 실제 과업은 국가별 권한 확인과 별도 계약 범위에 따라 진행합니다.</p>
+      <p><a class="link" href="https://gcsme.club/" target="_blank" rel="noopener">GCSME 영국 본사 ↗</a>&nbsp;&nbsp;&nbsp;<a class="link" href="https://www.gcsme.kr/" target="_blank" rel="noopener">GCSME 한국지사 ↗</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="hist pad" aria-labelledby="hist-h">
+  <div class="shell">
+    <div class="head"><h2 id="hist-h">걸어온 길</h2><p>작게 시작해 하나씩 쌓아 왔습니다.</p></div>
+    <ol class="time">
+      <li><b>2021. 12</b><h3>월드메이킹멤버스 주식회사 설립</h3><p>서울에서 경영컨설팅 법인으로 시작했습니다.</p></li>
+      <li><b>2024. 05</b><h3>통신판매업 신고</h3><p>제2024-서울서초-2185호. 온라인으로 서비스와 자료를 제공하기 시작했습니다.</p></li>
+      <li><b>2026. 01</b><h3>GCSME 영국 본사 한국지사 위임</h3><p>GCSME 한국지사를 설립·운영하는 공식 위임을 받았습니다.</p></li>
+      <li><b>2026</b><h3>GOV RADAR 공개</h3><p>193개국 정부 아젠다·입찰·위험 정보를 한곳에서 보는 레이더를 열었습니다.</p></li>
+      <li class="now"><b>2026. 11</b><h3>정부지원사업 서비스 시작</h3><p>국내·해외 지원사업 검색부터 서류·발표·후속 사업까지 함께하는 서비스를 시작했습니다.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="info pad" aria-labelledby="info-h">
+  <div class="shell info-in">
+    <div>
+      <h2 id="info-h">회사 정보</h2>
+      <div class="cta"><a class="btn btn-ink" href="/home?lang=ko#request">상담 신청</a><a class="btn btn-gold" href="/documents/WMM_Business_Introduction.pdf">회사소개서 PDF</a></div>
+    </div>
+    <dl>
+      <div><dt>상호</dt><dd>월드메이킹멤버스 주식회사 (WORLD MAKING MEMBERS)</dd></div>
+      <div><dt>대표</dt><dd>이덕영</dd></div>
+      <div><dt>업종</dt><dd>서비스 · 경영컨설팅</dd></div>
+      <div><dt>설립</dt><dd>2021년 12월</dd></div>
+      <div><dt>통신판매업 신고</dt><dd>제2024-서울서초-2185호</dd></div>
+      <div><dt>협력</dt><dd>GCSME(Global &amp; Commonwealth SME Club) 한국지사</dd></div>
+      <div><dt>이메일</dt><dd>73036396@naver.com</dd></div>
+    </dl>
+  </div>
+</section>
 </main>
-<footer class="foot wrap"><div class="in"><strong>WORLD MAKING MEMBERS</strong><span><span data-t="biz">월드메이킹멤버스 주식회사 · 통신판매업신고 제2024-서울서초-2185호</span> · <a href="mailto:73036396@naver.com">73036396@naver.com</a> · leedukyoung74@gmail.com</span></div></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
-<script>
-(function(){
-var T={ko:null,en:{n1:"About",n2:"Membership",n3:"Contact",h1:"The way to the world,<br>four doors.",lead:"Test an idea, check what governments are buying, deliver as one team, and share what it earns.",k1:"countries covered",k2:"open tenders",
- s1:"Door one · Test",d1:"Pick an idea, write a one-page plan, act for seven days. Free, no sign-up.",cc:"Concept image",g1:"Open the playground →",
- s2:"Door two · Check",d2:"Explore government priorities, public tenders and country risk information.",g2:"Explore GOV RADAR →",
- s3:"Door three · Deliver",n3h:"WMM, one team",d3:"Government support from search to business plans, pitch preparation and follow-on programmes. Analysis membership ₩20,000/month (VAT excl.).",g3:"Open the WMM homepage →",cc3:"Concept image",
- s4:"Door four · Share",d4:"Good work funded by part of our revenue. In preparation; we accept no donations.",g4:"See the plan →",biz:"WORLD MAKING MEMBERS Co., Ltd. · Online Sales Registration No. 2024-Seoul Seocho-2185"}};
-var KO={};document.querySelectorAll("[data-t]").forEach(function(e){KO[e.dataset.t]=e.innerHTML});T.ko=KO;
-var L=/[?&]lang=en/.test(location.search)?"en":"ko";try{if(!/[?&]lang=/.test(location.search)&&localStorage.getItem("wmm.lang")==="en")L="en"}catch(e){}
-function apply(){document.documentElement.lang=L;document.querySelectorAll("[data-t]").forEach(function(e){var v=T[L][e.dataset.t];if(v!=null)e.innerHTML=v});
- document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===L)});
- document.getElementById("dRadar").href="/radar-entry/"+(L==="en"?"en/":"");
- document.querySelectorAll('a[href^="/home.html"],a[href^="/membership/"]').forEach(function(a){var u=a.getAttribute("href").split("#");a.setAttribute("href",u[0].split("?")[0]+(L==="en"?"?lang=en":"?lang=ko")+(u[1]?"#"+u[1]:""))})}
-document.querySelectorAll(".lang button").forEach(function(b){b.onclick=function(){L=b.dataset.l;try{localStorage.setItem("wmm.lang",L)}catch(e){}apply()}});
-apply();
-Promise.all([fetch("https://radar.wmm-hoa.com/map/countries.json").then(function(r){return r.json()}),fetch("https://radar.wmm-hoa.com/map/world.json").then(function(r){return r.json()})]).then(function(a){
- var D=a[0],W=topojson.feature(a[1],a[1].objects.countries),tn=0;Object.keys(D).forEach(function(k){tn+=D[k].to||0});document.getElementById("kT").textContent=tn;
- var el=document.getElementById("heroMap"),w=el.clientWidth,h=el.clientHeight,narrow=innerWidth<640,svg=d3.select(el).attr("viewBox","0 0 "+w+" "+h).attr("preserveAspectRatio",narrow?"xMidYMin meet":"xMidYMid slice");
- var pr=d3.geoNaturalEarth1().fitExtent(narrow?[[w*.02,h*.04],[w*.98,h*.96]]:[[w*.36,h*.06],[w*.99,h*.94]],W),pa=d3.geoPath(pr);
- svg.append("g").selectAll("path").data(W.features).join("path").attr("d",pa).attr("fill","#EEF1F5").attr("stroke","#fff").attr("stroke-width",.6);
- var pts=W.features.filter(function(f){return D[f.id]&&D[f.id].to});
- svg.append("g").selectAll("circle").data(pts).join("circle").attr("cx",function(f){return pr(d3.geoCentroid(f))[0]}).attr("cy",function(f){return pr(d3.geoCentroid(f))[1]}).attr("r",function(f){return (narrow?1.6:2.5)+Math.sqrt(D[f.id].to)*(narrow?.9:1.6)}).attr("fill","#D9A12E");
-}).catch(function(){document.getElementById("kT").parentNode.style.display="none"});
-})();
-</script>
+
+<footer class="foot">
+  <div class="shell foot-in">
+    <a class="brand" href="/"><img src="/images/wmm-logo-white.png" width="40" height="40" alt=""><span>WORLD MAKING MEMBERS<small>월드메이킹멤버스 주식회사</small></span></a>
+    <nav aria-label="하단 메뉴"><a href="/">WMM 홈</a><a href="/home?lang=ko">정부지원사업</a><a href="/membership/">멤버십</a><a href="/support-map/privacy.html">개인정보 안내</a></nav>
+  </div>
+  <p class="shell" style="margin-top:20px;font-size:13px">73036396@naver.com · 통신판매업신고 제2024-서울서초-2185호</p>
+</footer>
 </body>
 </html>
