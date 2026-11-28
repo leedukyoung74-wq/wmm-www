@@ -36,7 +36,7 @@ p{margin:0}
 .top-in{display:flex;align-items:center;gap:28px;min-height:68px}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:700;font-size:18px;line-height:1.1}
 .brand small{display:block;font-size:12px;font-weight:400;opacity:.7;margin-top:3px}
-.nav{display:flex;gap:26px;margin-left:auto;font-size:15.5px}
+.nav{display:flex;gap:22px;margin-left:auto;font-size:15.5px}.nav a,.brand span{white-space:nowrap}
 .nav a{text-decoration:none;opacity:.85}.nav a:hover,.nav a[aria-current]{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--gold-l)}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;border-radius:999px;font:inherit;font-size:16px;font-weight:700;text-decoration:none;border:2px solid transparent;white-space:nowrap;transition:background .15s,color .15s}
 .btn-sm{min-height:40px;padding:0 18px;font-size:15px}
@@ -44,6 +44,7 @@ p{margin:0}
 .btn-line{border-color:rgba(255,255,255,.6);color:#fff}.btn-line:hover{background:#fff;color:var(--ink)}
 .btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{background:var(--ink2)}
 
+.top-act{display:flex;align-items:center;gap:16px}.lang-sw{display:flex;gap:2px;font-size:13.5px;font-weight:700;border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:3px}.lang-sw a{text-decoration:none;padding:5px 11px;border-radius:999px;opacity:.75}.lang-sw a[aria-current=true]{background:#fff;color:var(--ink);opacity:1}
 /* 첫 화면 */
 .hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
 .hero::after{content:"WMM";position:absolute;right:-2vw;bottom:-6vw;font-size:34vw;font-weight:700;line-height:.8;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1px rgba(217,181,106,.18);pointer-events:none}
@@ -169,6 +170,7 @@ p{margin:0}
 .foot a{text-decoration:none;opacity:.8}
 .foot p{opacity:.6}
 
+@media(max-width:1180px){.nav{display:none}.top-act{margin-left:auto}}
 @media(max-width:960px){
   .nav{display:none}
   .top-act{margin-left:auto}
@@ -189,6 +191,7 @@ p{margin:0}
 }
 @media(max-width:560px){
   body{font-size:16px}
+  .brand>span{display:none}.top-in{gap:12px}.lang-sw a{padding:5px 9px}
   .brand small{display:none}
   .hero h1{font-size:36px}
   .lead{font-size:17px!important}
@@ -205,7 +208,7 @@ p{margin:0}
   <div class="shell top-in">
     <a class="brand" href="/"><img src="/images/wmm-logo-white.png" width="40" height="40" alt=""><span>WORLD MAKING MEMBERS<small>월드메이킹멤버스</small></span></a>
     <nav class="nav" aria-label="주 메뉴"><a href="#letter">회사 소개</a><a href="/home?lang=ko">정부지원사업</a><a href="https://radar.wmm-hoa.com/">GOV RADAR</a><a href="/business-studio/">해외 진출</a><a href="/membership/">멤버십</a></nav>
-    <div class="top-act"><a class="btn btn-gold btn-sm" href="/home?lang=ko#request">상담 신청</a></div>
+    <div class="top-act"><div class="lang-sw" data-lang-switch aria-label="언어 / Language"><a data-l="ko" href="/" lang="ko">한국어</a><a data-l="en" href="/?lang=en" lang="en">EN</a></div><a class="btn btn-gold btn-sm" href="/home?lang=ko#request">상담 신청</a></div>
   </div>
 </header>
 
@@ -338,5 +341,6 @@ p{margin:0}
   </div>
   <p class="shell" style="margin-top:20px;font-size:13px">73036396@naver.com · 통신판매업신고 제2024-서울서초-2185호</p>
 </footer>
+<script src="/assets/wmm-main-en.js?v=1"></script>
 </body>
 </html>
