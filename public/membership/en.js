@@ -1,7 +1,7 @@
 /* WMM 멤버십 한국어·영어 전환 (2026-11-28) — ?lang=en */
 (function(){
 if(!/[?&]lang=en\b/.test(location.search))return;
-var D={"정보에서 실행 파트너까지,":"From information to delivery partner,","단계별로 함께합니다.":"step by step.",
+var D={"가입 방법 보기":"How to join","GOV RADAR 무료 가입":"Join GOV RADAR free","GOV RADAR에서 Google 계정이나 이메일로 가입하세요. 이 계정이 멤버십 계정이 됩니다.":"Sign up on GOV RADAR with Google or email. That account becomes your membership account.","GOV RADAR 무료 가입 ↗":"Join GOV RADAR free ↗","같은 이메일로 신청":"Apply with the same email","아래 양식에 GOV RADAR 가입 이메일을 적어 보내 주세요. 사업자 정보를 확인하고 맞는 등급과 요금을 안내합니다.":"Send the form below with your GOV RADAR account email. We check your business details and confirm the right grade and fee.","입금 후 등급 열림":"Access opens after payment","M1은 입금 확인 후 영업일 1일 안에 그 계정의 등급을 올립니다. 다음 로그인부터 바로 쓸 수 있고, M2부터는 계약 후 시작합니다.":"For M1 we upgrade that account within one business day of payment, so it works from your next login. From M2, work starts after a contract.","M0은 GOV RADAR 가입만으로 바로 시작합니다. M1은 신청부터 이용까지 보통 영업일 1~2일, M2부터는 심사 기간이 더 걸립니다.":"M0 starts as soon as you join GOV RADAR. M1 usually takes 1–2 business days from application to access; from M2 the review takes longer.","GOV RADAR 가입 이메일":"GOV RADAR account email","정보에서 실행 파트너까지,":"From information to delivery partner,","단계별로 함께합니다.":"step by step.",
 "무료로 둘러보고, 필요할 때 분석 회원으로, 사업이 커지면 실행 파트너로. 하나의 멤버십으로 국내외 사업 준비를 이어 갑니다.":"Browse for free, become an analysis member when you need more, and a delivery partner as your business grows. One membership for your work in Korea and abroad.",
 "가입 신청":"Apply","등급 보기":"View grades","등급과 요금":"Grades and fees","M0·M1은 바로 시작할 수 있고, M2부터는 심사를 거쳐 범위와 견적을 정합니다.":"M0 and M1 start right away; from M2 we agree scope and a quote after a review.",
 "M1 · 분석 회원":"M1 · Analysis member","무료":"Free","처음 둘러보는 기업":"Companies exploring","공개 자료와 설명회":"Public materials and briefings","GOV RADAR 나라별 요약":"GOV RADAR country summaries",
@@ -27,4 +27,5 @@ var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n,l=[];while
 l.forEach(function(t){var k=t.nodeValue.replace(/\s+/g," ").trim();if(k&&D[k])t.nodeValue=t.nodeValue.match(/^\s*/)[0]+D[k]+t.nodeValue.match(/\s*$/)[0]});
 var c=document.getElementById('f-country');if(c)c.placeholder="e.g. Korea, United Kingdom";var m=document.getElementById('f-msg');if(m)m.placeholder="e.g. We are a food manufacturer looking for UK buyers.";
 var im=document.querySelector('#give img');if(im)im.alt="Hands on piano keys";
+var r=document.getElementById('f-radar');if(r)r.placeholder='Leave blank if same as reply email';var c=document.querySelector('.mcard');if(c)c.setAttribute('aria-label','WMM membership card');
 })();

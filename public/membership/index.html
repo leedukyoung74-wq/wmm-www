@@ -13,6 +13,13 @@
 <link rel="stylesheet" href="/assets/wmm-font.css">
 <link rel="stylesheet" href="/assets/wmm-main.css?v=2">
 <style>
+.hero2{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:56px;align-items:center}
+.mcard{aspect-ratio:1.586;max-width:100%;width:100%;border-radius:22px;background:#0b0b0c;border:1px solid rgba(217,181,106,.55);box-shadow:0 30px 60px rgba(0,0,0,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px}
+.mcard img{width:34%;height:auto}
+.mcard b{color:#D9B56A;font-size:clamp(14px,1.7vw,21px);letter-spacing:.12em;font-weight:700;margin-top:10px;text-align:center}
+.mcard small{color:#B7862C;font-size:clamp(10px,1vw,12px);letter-spacing:.3em}
+.join-go{display:inline-block;margin-top:12px;font-weight:700;color:var(--ink);border-bottom:2px solid var(--gold)}
+@media(max-width:860px){.hero2{grid-template-columns:1fr;gap:36px}.mcard{max-width:380px}}
 .sub-hero{background:var(--ink);color:#fff;padding-block:88px 72px}
 .sub-hero .name-en{font-size:14px;letter-spacing:.16em;color:var(--gold-l);font-weight:700}
 .sub-hero h1{font-size:clamp(34px,4.6vw,58px);margin-top:14px}
@@ -81,11 +88,14 @@ form.req .note{font-size:13.5px;color:var(--muted)}
 .gs{background:#F4F2ED;color:#0B1526;font-family:"WMM Nexon Lv1","NEXON Lv1 Gothic",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;padding:72px 0;border-top:1px solid #E2DED5}.gs-in{max-width:1200px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px));display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:24px 56px;align-items:start}.gs-h h2{font-size:clamp(26px,3vw,38px);line-height:1.25;margin:0;text-wrap:balance}.gs-h p{color:#4E5666;margin:14px 0 0;font-size:16px;line-height:1.7;text-wrap:pretty}.gs-steps{list-style:none;margin:0;padding:0;display:grid;gap:12px}.gs-steps li{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:12px;padding:16px 20px;border:1px solid #E2DED5}.gs-steps b{flex:none;width:32px;height:32px;border-radius:50%;background:#0B1526;color:#D9B56A;display:grid;place-items:center;font-size:15px}.gs-steps strong{display:block;font-size:17px}.gs-steps span{display:block;font-size:14.5px;color:#4E5666;margin-top:2px}.gs-act{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:8px}.gs-btn{background:#B7862C;color:#fff!important;font-weight:700;border-radius:999px;padding:14px 26px;text-decoration:none}.gs-btn:hover{background:#9C7224}.gs-mail{font-weight:700;font-size:18px;user-select:all}.gs-link{font-weight:700;color:#0B1526!important;border-bottom:2px solid #B7862C;text-decoration:none}.wr-embed-mode .gs{display:none}@media(max-width:860px){.gs-in{grid-template-columns:minmax(0,1fr)}.gs{padding:56px 0}}h1,h2,.lead,.hub .lead,.intro,.ov-lead,.cv-lead{text-wrap:balance}p{text-wrap:pretty}
 </style><div class="gh" role="banner"><div class="gh-in"><a class="gh-brand" href="/" aria-label="WMM 메인 홈"><img src="/images/wmm-logo-white.png" alt="WMM · WORLD MAKING MEMBERS" width="41" height="40"><span>WORLD MAKING MEMBERS</span></a><nav class="gh-nav" aria-label="주 메뉴"><a href="/"><span data-gh-ko="WMM 홈" data-gh-en="WMM home">WMM 홈</span></a><a href="/home"><span data-gh-ko="정부지원사업" data-gh-en="Government support">정부지원사업</span></a><a href="/home-details?lang=ko"><span data-gh-ko="회사소개서" data-gh-en="Company profile">회사소개서</span></a><a href="/business-studio/"><span data-gh-ko="비즈니스 스튜디오" data-gh-en="Business Studio">비즈니스 스튜디오</span></a><a href="/membership/" class="on"><span data-gh-ko="멤버십" data-gh-en="Membership">멤버십</span></a><a href="https://radar.wmm-hoa.com/" target="_blank" rel="noopener"><span data-gh-ko="GOV RADAR" data-gh-en="GOV RADAR">GOV RADAR</span></a></nav><div class="gh-act"><div class="gh-lang" aria-label="언어 / Language"><a data-l="ko" lang="ko" href="/membership/?lang=ko">한국어</a><a data-l="en" lang="en" href="/membership/?lang=en">EN</a></div><a class="gh-cta" href="/home#request"><span data-gh-ko="상담 신청" data-gh-en="Contact us">상담 신청</span></a></div></div><nav class="gh-mnav" aria-label="모바일 메뉴"><a href="/"><span data-gh-ko="WMM 홈" data-gh-en="WMM home">WMM 홈</span></a><a href="/home"><span data-gh-ko="정부지원사업" data-gh-en="Government support">정부지원사업</span></a><a href="/home-details?lang=ko"><span data-gh-ko="회사소개서" data-gh-en="Company profile">회사소개서</span></a><a href="/business-studio/"><span data-gh-ko="비즈니스 스튜디오" data-gh-en="Business Studio">비즈니스 스튜디오</span></a><a href="/membership/" class="on"><span data-gh-ko="멤버십" data-gh-en="Membership">멤버십</span></a><a href="https://radar.wmm-hoa.com/" target="_blank" rel="noopener"><span data-gh-ko="GOV RADAR" data-gh-en="GOV RADAR">GOV RADAR</span></a></nav></div><main>
 <section class="sub-hero">
-  <div class="shell">
+  <div class="shell hero2">
+    <div>
     <p class="name-en">WMM MEMBERSHIP</p>
     <h1>정보에서 실행 파트너까지,<br>단계별로 함께합니다.</h1>
     <p class="lead">무료로 둘러보고, 필요할 때 분석 회원으로, 사업이 커지면 실행 파트너로. 하나의 멤버십으로 국내외 사업 준비를 이어 갑니다.</p>
-    <div class="hero-act"><a class="btn btn-gold" href="#apply">가입 신청</a><a class="btn btn-line" href="#tiers">등급 보기</a></div>
+    <div class="hero-act"><a class="btn btn-gold" href="#join">가입 방법 보기</a><a class="btn btn-line" href="#tiers">등급 보기</a></div>
+    </div>
+    <div class="mcard" role="img" aria-label="WMM 멤버십 카드"><img src="/membership/membership-mark.webp" alt="" width="318" height="252"><b>WORLD MAKING MEMBERS</b><small>MEMBERSHIP</small></div>
   </div>
 </section>
 
@@ -106,11 +116,11 @@ form.req .note{font-size:13.5px;color:var(--muted)}
 
 <section class="pad tone" id="join">
   <div class="shell">
-    <div class="head"><h2>가입은 이렇게 진행됩니다</h2><p>신청부터 이용 시작까지 보통 영업일 1~2일이면 됩니다(M2부터는 심사 기간이 더 걸립니다).</p></div>
+    <div class="head"><h2>가입은 이렇게 진행됩니다</h2><p>M0은 GOV RADAR 가입만으로 바로 시작합니다. M1은 신청부터 이용까지 보통 영업일 1~2일, M2부터는 심사 기간이 더 걸립니다.</p></div>
     <ol class="flow3">
-      <li><b>신청</b><p>아래 양식으로 신청 메일을 만들어 보내 주세요.</p></li>
-      <li><b>확인</b><p>사업자 정보와 자료를 확인하고, 맞는 등급과 요금을 안내합니다.</p></li>
-      <li><b>시작</b><p>M1은 입금 확인 후 영업일 1일 안에 권한을 열고, M2부터는 계약 후 시작합니다.</p></li>
+      <li><b>GOV RADAR 무료 가입</b><p>GOV RADAR에서 Google 계정이나 이메일로 가입하세요. 이 계정이 멤버십 계정이 됩니다.</p><a class="join-go" href="https://radar.wmm-hoa.com/ko/account/" target="_blank" rel="noopener">GOV RADAR 무료 가입 ↗</a></li>
+      <li><b>같은 이메일로 신청</b><p>아래 양식에 GOV RADAR 가입 이메일을 적어 보내 주세요. 사업자 정보를 확인하고 맞는 등급과 요금을 안내합니다.</p></li>
+      <li><b>입금 후 등급 열림</b><p>M1은 입금 확인 후 영업일 1일 안에 그 계정의 등급을 올립니다. 다음 로그인부터 바로 쓸 수 있고, M2부터는 계약 후 시작합니다.</p></li>
     </ol>
   </div>
 </section>
@@ -148,6 +158,7 @@ form.req .note{font-size:13.5px;color:var(--muted)}
       <label>회사·기관명<input id="f-org" maxlength="120" autocomplete="organization"></label>
       <label>희망 등급<select id="f-grade" required><option>M0 OPEN (무료)</option><option selected>M1 분석 회원 (월 20,000원, VAT 별도)</option><option>M2 PRO</option><option>M3 BUSINESS</option><option>M4 PROJECT 상담</option><option>M5 STRATEGIC 상담</option></select></label>
       <label>답장 받을 이메일<input id="f-email" type="email" required maxlength="120" autocomplete="email"></label>
+      <label>GOV RADAR 가입 이메일<input id="f-radar" type="email" maxlength="120" placeholder="답장 이메일과 같으면 비워 두세요"></label>
       <label>활동 국가·지역<input id="f-country" maxlength="80" placeholder="예: 대한민국, 영국"></label>
       <label>하고 싶은 일<textarea id="f-msg" rows="4" maxlength="1500" placeholder="예: 영국 바이어를 찾고 싶은 식품 제조사입니다."></textarea></label>
       <label class="consent"><input id="f-consent" type="checkbox" required><span>신청 접수와 회신을 위해 위 정보를 받는 데 동의합니다. 가입 상담에만 쓰고, 가입하지 않으면 1년 안에 지웁니다.</span></label>
@@ -159,11 +170,11 @@ form.req .note{font-size:13.5px;color:var(--muted)}
 </main><section class="gs" aria-label="바로 시작하기"><div class="gs-in"><div class="gs-h"><h2><span data-gh-ko="바로 시작하세요" data-gh-en="Get started today">바로 시작하세요</span></h2><p><span data-gh-ko="온라인으로 어디서나, 서울에서는 직접 만나서. 영국 GCSME 본사와 해외 네트워크까지 한 창구에서 연결합니다." data-gh-en="Online from anywhere, or in person in Seoul. One contact connects you to GCSME UK headquarters and our international network.">온라인으로 어디서나, 서울에서는 직접 만나서. 영국 GCSME 본사와 해외 네트워크까지 한 창구에서 연결합니다.</span></p></div><ol class="gs-steps"><li><b>1</b><div><strong><span data-gh-ko="상담 신청" data-gh-en="Tell us">상담 신청</span></strong><span><span data-gh-ko="양식이나 이메일로 지금 상황을 알려 주세요" data-gh-en="Share your situation by form or email">양식이나 이메일로 지금 상황을 알려 주세요</span></span></div></li><li><b>2</b><div><strong><span data-gh-ko="1영업일 안에 회신" data-gh-en="Reply in 1 business day">1영업일 안에 회신</span></strong><span><span data-gh-ko="필요한 일과 범위, 견적을 먼저 안내합니다" data-gh-en="We set out the work, scope and quote first">필요한 일과 범위, 견적을 먼저 안내합니다</span></span></div></li><li><b>3</b><div><strong><span data-gh-ko="바로 착수" data-gh-en="Start">바로 착수</span></strong><span><span data-gh-ko="온라인·오프라인으로 진행하고 단계마다 결과를 확인합니다" data-gh-en="Online and in person, with results checked at every stage">온라인·오프라인으로 진행하고 단계마다 결과를 확인합니다</span></span></div></li></ol><div class="gs-act"><a class="gs-btn" href="/home#request"><span data-gh-ko="상담 신청하기" data-gh-en="Request a consultation">상담 신청하기</span></a><span class="gs-mail">73036396@naver.com</span><a class="gs-link" href="/documents/WMM_Business_Introduction.pdf"><span data-gh-ko="회사소개서 PDF" data-gh-en="Company profile PDF">회사소개서 PDF</span></a></div></div></section><div class="gf" role="contentinfo"><div class="gf-in"><a class="gf-brand" href="/"><img src="/images/wmm-logo-white.png" alt="WMM · WORLD MAKING MEMBERS" width="45" height="44"><span>WORLD MAKING MEMBERS<small><span data-gh-ko="월드메이킹멤버스 주식회사" data-gh-en="World Making Members Co., Ltd.">월드메이킹멤버스 주식회사</span></small></span></a><nav aria-label="하단 메뉴"><a href="/"><span data-gh-ko="WMM 홈" data-gh-en="WMM home">WMM 홈</span></a><a href="/home"><span data-gh-ko="정부지원사업" data-gh-en="Government support">정부지원사업</span></a><a href="/home-details?lang=ko"><span data-gh-ko="회사소개서" data-gh-en="Company profile">회사소개서</span></a><a href="/membership/"><span data-gh-ko="멤버십" data-gh-en="Membership">멤버십</span></a><a href="/support-map/privacy.html"><span data-gh-ko="개인정보 안내" data-gh-en="Privacy">개인정보 안내</span></a></nav></div><p>73036396@naver.com · <span data-gh-ko="통신판매업신고 제2024-서울서초-2185호" data-gh-en="Mail-order registration No. 2024-Seoul Seocho-2185">통신판매업신고 제2024-서울서초-2185호</span></p></div><script id="wmm-gh-js">(function(){function run(){var en=(document.documentElement.lang||"").indexOf("en")===0||/[?&]lang=en\b/.test(location.search);document.querySelectorAll("[data-gh-en]").forEach(function(e){e.textContent=en?e.getAttribute("data-gh-en"):e.getAttribute("data-gh-ko")});document.querySelectorAll(".gh-lang a").forEach(function(a){a.setAttribute("aria-current",(a.getAttribute("data-l")==="en")===en?"true":"false")})}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run);else run();addEventListener("load",run);setTimeout(run,600)})();</script><script>
 (function(){var en=/[?&]lang=en\b/.test(location.search);var f=document.getElementById('apply-form'),st=document.getElementById('apply-status');
 function v(id){return document.getElementById(id).value.trim()}
-function body(){return [(en?'Name: ':'이름: ')+v('f-name'),(en?'Organisation: ':'회사·기관명: ')+v('f-org'),(en?'Grade: ':'희망 등급: ')+document.getElementById('f-grade').selectedOptions[0].textContent,(en?'Email: ':'이메일: ')+v('f-email'),(en?'Country/region: ':'활동 국가·지역: ')+v('f-country'),'',v('f-msg')].join('\n')}
+function body(){return [(en?'Name: ':'이름: ')+v('f-name'),(en?'Organisation: ':'회사·기관명: ')+v('f-org'),(en?'Grade: ':'희망 등급: ')+document.getElementById('f-grade').selectedOptions[0].textContent,(en?'Email: ':'이메일: ')+v('f-email'),(en?'GOV RADAR account email: ':'GOV RADAR 가입 이메일: ')+(v('f-radar')||v('f-email')),(en?'Country/region: ':'활동 국가·지역: ')+v('f-country'),'',v('f-msg')].join('\n')}
 function subj(){return (en?'[WMM membership] ':'[WMM 멤버십 신청] ')+(v('f-org')||v('f-name'))}
 f.addEventListener('submit',function(e){e.preventDefault();if(!f.reportValidity())return;location.href='mailto:73036396@naver.com?subject='+encodeURIComponent(subj())+'&body='+encodeURIComponent(body());st.textContent=en?'Your email app should open. Press Send there to apply.':'메일 앱이 열리면 보내기를 눌러 주세요. 보내야 접수됩니다.'});
 document.getElementById('copy-btn').addEventListener('click',function(){if(!f.reportValidity())return;var t=subj()+'\n\n'+body();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){st.textContent=en?'Copied. Email it to 73036396@naver.com.':'복사했습니다. 73036396@naver.com으로 보내 주세요.'},function(){st.textContent=t})});
 })();
-</script><script src="/membership/en.js?v=1"></script>
+</script><script src="/membership/en.js?v=2"></script>
 </body>
 </html>
