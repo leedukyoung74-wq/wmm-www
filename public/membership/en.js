@@ -1,0 +1,30 @@
+/* WMM 멤버십 한국어·영어 전환 (2026-11-28) — ?lang=en */
+(function(){
+if(!/[?&]lang=en\b/.test(location.search))return;
+var D={"정보에서 실행 파트너까지,":"From information to delivery partner,","단계별로 함께합니다.":"step by step.",
+"무료로 둘러보고, 필요할 때 분석 회원으로, 사업이 커지면 실행 파트너로. 하나의 멤버십으로 국내외 사업 준비를 이어 갑니다.":"Browse for free, become an analysis member when you need more, and a delivery partner as your business grows. One membership for your work in Korea and abroad.",
+"가입 신청":"Apply","등급 보기":"View grades","등급과 요금":"Grades and fees","M0·M1은 바로 시작할 수 있고, M2부터는 심사를 거쳐 범위와 견적을 정합니다.":"M0 and M1 start right away; from M2 we agree scope and a quote after a review.",
+"M1 · 분석 회원":"M1 · Analysis member","무료":"Free","처음 둘러보는 기업":"Companies exploring","공개 자료와 설명회":"Public materials and briefings","GOV RADAR 나라별 요약":"GOV RADAR country summaries",
+"월 20,000원":"₩20,000/month","연 200,000원 · VAT 별도":"₩200,000/year · VAT excl.","정보를 꾸준히 보는 기업":"Companies following the data","GOV RADAR 모든 나라 전체 목록":"Full GOV RADAR lists for every country","관심 나라 10곳 알림":"Alerts for 10 countries","AI 빠른 검토 월 2건":"2 AI quick reviews a month",
+"상담 후 견적":"Quote after consultation","진출을 준비하는 기업":"Companies preparing to enter a market","영문 서류 지원":"English document support","큐레이션 소개":"Curated introductions","검증을 마친 기업":"Verified companies","상대 연결 준비·우선 상담":"Partner-matching preparation and priority consultation","투자자 협의(심사 중부터)":"Investor talks (from review)",
+"특정 국가 진출 실행":"Entering a specific country","6주 시장 검증":"6-week market validation","현지 일정 조율":"Local scheduling","공공·대형 수주 추진":"Pursuing public and large contracts","입찰 준비부터 계약까지 동행":"With you from bid preparation to signing","장기 협력":"Long-term partnership",
+"자동갱신 없음 · 결제 후 7일 안에 유료 자료를 쓰지 않았다면 전액 환불 · 세금계산서 발행 · 멤버십은 수주·투자·매출을 보장하지 않습니다.":"No auto-renewal · full refund within 7 days if no paid material was used · tax invoices issued · membership does not guarantee contracts, investment or sales.",
+"가입은 이렇게 진행됩니다":"How joining works","신청부터 이용 시작까지 보통 영업일 1~2일이면 됩니다(M2부터는 심사 기간이 더 걸립니다).":"It usually takes 1–2 business days from application to access (longer from M2 because of the review).",
+"신청":"Apply","아래 양식으로 신청 메일을 만들어 보내 주세요.":"Use the form below to prepare and send your application email.","확인":"Review","사업자 정보와 자료를 확인하고, 맞는 등급과 요금을 안내합니다.":"We check your business details and materials and confirm the right grade and fee.","시작":"Start","M1은 입금 확인 후 영업일 1일 안에 권한을 열고, M2부터는 계약 후 시작합니다.":"M1 access opens within one business day of payment; from M2, work starts after a contract.",
+"멤버십이 이웃을 돕는 힘으로":"Membership that helps our neighbours","멤버십 수익의 일부는 준비 중인 공익 프로그램, 자폐 아동 피아노·힐링 지원에 쓸 계획입니다. 시작하면 사용 내역을 기준에 따라 공개합니다.":"We plan to use part of membership income for a public-benefit programme in preparation: piano and healing support for autistic children. Spending will be disclosed once it starts.",
+"자주 묻는 질문":"Frequently asked questions","궁금한 점이 더 있으면 이메일로 물어보세요.":"Email us with any other questions.",
+"가입하면 수주나 투자를 받을 수 있나요?":"Does membership bring contracts or investment?","자동으로 연결되지 않습니다. 회원 자격과 프로젝트 선정·투자 심사는 서로 다른 결정입니다. 저희는 그 가능성을 높이는 준비를 돕습니다.":"Not automatically. Membership and project or investment decisions are separate. We help you prepare to improve your chances.",
+"어떤 등급부터 시작하면 되나요?":"Which grade should I start with?","처음에는 M0 또는 M1로 신청하세요. 확인 서류를 받은 뒤 맞는 등급을 함께 정합니다.":"Start with M0 or M1. Once we have your documents, we agree the right grade together.",
+"해외 기업이나 기관도 가입할 수 있나요?":"Can overseas companies or institutions join?","가입할 수 있습니다. 신청서는 영어로 써도 되고, 확인 서류는 해당 국가의 공식 문서로 받습니다.":"Yes. You can apply in English, and we accept official documents from your country.",
+"오프라인으로도 만날 수 있나요?":"Can we meet in person?","네. 첫 상담과 설명회는 서울에서 직접 만나거나 온라인으로 할 수 있습니다.":"Yes. First meetings and briefings can be in person in Seoul or online.",
+"멤버십 가입 신청":"Membership application","양식을 채우면 보낼 메일이 만들어집니다.":"Fill in the form to prepare your email.","으로 보내 주시면 접수됩니다.":" — send it there to apply.",
+"이름":"Name","회사·기관명":"Company or organisation","희망 등급":"Grade","답장 받을 이메일":"Reply email","활동 국가·지역":"Country or region","하고 싶은 일":"What you want to do",
+"신청 접수와 회신을 위해 위 정보를 받는 데 동의합니다. 가입 상담에만 쓰고, 가입하지 않으면 1년 안에 지웁니다.":"I agree to share this information so you can process and reply to my application. It is used only for membership consultation and deleted within a year if I do not join.",
+"메일 앱에서 보내기":"Send from your email app","내용 복사":"Copy","메일을 보내야 접수됩니다. 입력 내용은 저장되지 않습니다.":"Your application is received only when you send the email. Nothing you type is stored.",
+"M0 OPEN (무료)":"M0 OPEN (free)","M1 분석 회원 (월 20,000원, VAT 별도)":"M1 Analysis member (₩20,000/month, VAT excl.)","M4 PROJECT 상담":"M4 PROJECT consultation","M5 STRATEGIC 상담":"M5 STRATEGIC consultation"};
+document.documentElement.lang="en";document.title="WMM Membership | Grades, fees and application";
+var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n,l=[];while(n=w.nextNode())l.push(n);
+l.forEach(function(t){var k=t.nodeValue.replace(/\s+/g," ").trim();if(k&&D[k])t.nodeValue=t.nodeValue.match(/^\s*/)[0]+D[k]+t.nodeValue.match(/\s*$/)[0]});
+var c=document.getElementById('f-country');if(c)c.placeholder="e.g. Korea, United Kingdom";var m=document.getElementById('f-msg');if(m)m.placeholder="e.g. We are a food manufacturer looking for UK buyers.";
+var im=document.querySelector('#give img');if(im)im.alt="Hands on piano keys";
+})();
