@@ -8,7 +8,7 @@ var D={
 "찾고, 준비하고, 만들고, 나눕니다.":"Find, prepare, build and give back.",
 "월드메이킹멤버스(WMM)의 모든 서비스를 한 장에 모았습니다. 지금 필요한 곳에서 시작하세요.":"Every World Making Members (WMM) service on one page. Start wherever you need to.",
 "기회 찾기":"Find opportunities","정부지원사업 실행센터":"Government support centre","지역·대상별 검색, 공식 원문과 신청 준비표":"Search by region and applicant, with official notices and an application checklist",
-"해외 정부 사업·입찰 · 상세는 회원가입 후":"Foreign government programmes and tenders · details after sign-up","WMM 회사 홈페이지":"WMM company site","회사와 그룹 서비스 소개":"The company and its group services",
+"해외 정부 사업·입찰 · 상세는 회원가입 후":"Foreign government programmes and tenders · details after sign-up","WMM 회사소개서":"WMM company profile","회사 개요, 사업 영역, 서비스와 진행 방식":"Overview, business areas, services and process","WMM 홈":"WMM home",
 "신청과 사업 준비":"Apply and prepare","신청 준비와 사업계획서":"Application and business plan","자격·마감·증빙 확인, PSST 초안":"Eligibility, deadlines and documents, plus a PSST draft",
 "WMM 플레이그라운드":"WMM Playground","아이디어를 7일 동안 직접 실천":"Put an idea into practice for 7 days","미리보기":"Preview","AI 도구 비교와 업무 지시문":"AI tool comparisons and work prompts",
 "제작·기업 지원":"Production and business support","뭉치고 제작 상품":"Mungchigo production","콘텐츠 상품·작업 예시·견적":"Content products, samples and quotes","제안서·PPT, 웹사이트, 업무자동화 프로젝트":"Proposals and decks, websites and workflow automation projects","비즈니스 스튜디오":"Business Studio",
