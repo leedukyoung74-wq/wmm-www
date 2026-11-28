@@ -7,7 +7,7 @@
 <meta name="description" content="월드메이킹멤버스(WMM)는 정부지원사업과 해외 진출을 준비하는 기업 곁에서 공고 확인부터 서류, 발표, 실행까지 한 팀으로 함께하는 경영컨설팅 회사입니다. GCSME 한국지사 운영.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="회사 소개 | WMM 월드메이킹멤버스">
-<meta property="og:description" content="기회를 찾는 데서 끝나지 않고, 실행까지 한 팀으로. 대표 이덕영.">
+<meta property="og:description" content="WMM의 모든 서비스를 한 장에 — 찾고, 준비하고, 만들고, 나눕니다.">
 <meta property="og:image" content="https://www.wmm-hoa.com/images/og-wmm.jpg">
 <link rel="canonical" href="https://www.wmm-hoa.com/about/">
 <link rel="icon" href="/images/wmm-icon-32.png" type="image/png">
@@ -58,6 +58,39 @@ p{margin:0}
 .facts li+li{padding-left:24px}.facts li:last-child{border-right:0}
 .facts b{display:block;font-size:28px;font-weight:700;letter-spacing:-.02em}
 .facts span{font-size:14.5px;color:var(--muted)}
+
+/* 한 장 지도 */
+.hub{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hub::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 58%,rgba(217,181,106,.16),transparent 42%);pointer-events:none}
+.hub-head{position:relative;text-align:center;padding-top:52px}
+.hub .name-en{font-size:14px;letter-spacing:.16em;color:var(--gold-l);font-weight:700}
+.hub h1{font-size:clamp(32px,4vw,52px);margin-top:10px}
+.hub .lead{font-size:17px;color:rgba(255,255,255,.75);margin:12px auto 0;max-width:40em}
+.compass{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);grid-template-rows:auto auto;gap:20px 40px;padding-block:36px 64px;align-items:stretch}
+.quad{background:rgba(255,255,255,.04);border:1px solid rgba(217,181,106,.22);border-radius:18px;padding:20px 26px;min-width:0;backdrop-filter:blur(2px);transition:border-color .2s,background .2s}
+.quad:hover{border-color:rgba(217,181,106,.6);background:rgba(255,255,255,.06)}
+.q1{grid-column:1;grid-row:1}.q2{grid-column:3;grid-row:1}.q3{grid-column:1;grid-row:2}.q4{grid-column:3;grid-row:2}
+.q2,.q4{text-align:left}
+.quad h2{font-size:22px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:10px;margin-bottom:4px;border-bottom:1px solid rgba(255,255,255,.14)}
+.quad h2 small{font-size:12px;letter-spacing:.2em;color:var(--gold-l);font-weight:700}
+.quad a,.quad .soon{display:block;padding:10px 30px 10px 0;border-bottom:1px solid rgba(255,255,255,.08);text-decoration:none;position:relative}
+.quad a:last-child,.quad .soon:last-child{border-bottom:0}
+.quad a::after{content:"→";position:absolute;right:4px;top:10px;color:var(--gold-l);transition:transform .2s}
+.quad a:hover::after{transform:translateX(4px)}
+.quad b{display:block;font-size:17px}
+.quad span{display:block;font-size:14px;color:rgba(255,255,255,.62);margin-top:2px}
+.quad em{font-style:normal;font-size:11.5px;font-weight:700;color:var(--ink);background:var(--gold-l);border-radius:4px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+.quad .soon{opacity:.7}
+.core{grid-column:2;grid-row:1/3;position:relative;display:grid;place-items:center;align-self:center;aspect-ratio:1}
+.core img{width:58%;position:relative;opacity:.95}
+.core .ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 60s linear infinite}
+.core .ring text{font-size:13px;fill:var(--gold-l);font-weight:700}
+.core::before{content:"";position:absolute;inset:16%;border-radius:50%;border:1px solid rgba(217,181,106,.35)}
+.core::after{content:"";position:absolute;left:-40px;right:-40px;top:50%;height:1px;background:linear-gradient(90deg,rgba(217,181,106,.5),transparent 30%,transparent 70%,rgba(217,181,106,.5))}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:1060px){.compass{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}.core{grid-column:1/-1;grid-row:auto;order:-1;width:220px;margin:0 auto}.core::after{display:none}.q1,.q2,.q3,.q4{grid-column:auto;grid-row:auto}}
+@media(max-width:640px){.compass{grid-template-columns:minmax(0,1fr)}.hub-head{padding-top:56px}.quad{padding:22px}}
+@media(prefers-reduced-motion:reduce){.core .ring{animation:none}}
 
 /* 인사말 */
 .letter{background:var(--tone)}
@@ -170,27 +203,48 @@ p{margin:0}
 </header>
 
 <main>
-<section class="hero" aria-labelledby="hero-h">
-  <div class="shell hero-in">
-    <div class="hero-copy">
-      <p class="name-en">WORLD MAKING MEMBERS</p>
-      <h1 id="hero-h">기회를 찾는 데서<br>끝나지 않게,<br>실행까지 한 팀으로.</h1>
-      <p class="lead">월드메이킹멤버스(WMM)는 정부지원사업과 해외 진출을 준비하는 기업 곁에서 공고 확인부터 사업계획서, 발표, 현지 파트너 연결까지 함께하는 경영컨설팅 회사입니다.</p>
-      <div class="hero-act"><a class="btn btn-gold" href="#letter">대표 인사말</a><a class="btn btn-line" href="#work">하는 일 보기</a></div>
-    </div>
-    <figure class="hero-pic">
-      <img src="/about/ceo-lee-duk-young.webp" width="816" height="1170" alt="월드메이킹멤버스 이덕영 대표" fetchpriority="high">
-      <figcaption><b>이덕영</b>대표 · GCSME 한국지사장</figcaption>
-    </figure>
+<section class="hub" aria-labelledby="hub-h">
+  <div class="shell hub-head">
+    <p class="name-en">WORLD MAKING MEMBERS</p>
+    <h1 id="hub-h">찾고, 준비하고, 만들고, 나눕니다.</h1>
+    <p class="lead">월드메이킹멤버스(WMM)의 모든 서비스를 한 장에 모았습니다. 지금 필요한 곳에서 시작하세요.</p>
   </div>
-  <div class="facts">
-    <div class="shell"><ul>
+  <div class="shell compass">
+    <div class="quad q1">
+      <h2>기회 찾기<small>FIND</small></h2>
+      <a href="/home?lang=ko#support-search"><b>정부지원사업 실행센터</b><span>지역·대상별 검색, 공식 원문과 신청 준비표</span></a>
+      <a href="https://radar.wmm-hoa.com/"><b>GOV RADAR</b><span>해외 정부 사업·입찰 · 상세는 회원가입 후</span></a>
+      <a href="/home-details?lang=ko"><b>WMM 회사 홈페이지</b><span>회사와 그룹 서비스 소개</span></a>
+    </div>
+    <div class="quad q2">
+      <h2>신청과 사업 준비<small>PREPARE</small></h2>
+      <a href="/home?lang=ko#preparation"><b>신청 준비와 사업계획서</b><span>자격·마감·증빙 확인, PSST 초안</span></a>
+      <a href="https://radar.wmm-hoa.com/playground/"><b>WMM 플레이그라운드</b><span>아이디어를 7일 동안 직접 실천</span></a>
+      <div class="soon"><b>AI WORLD <em>미리보기</em></b><span>AI 도구 비교와 업무 지시문</span></div>
+    </div>
+    <div class="core" aria-hidden="true">
+      <svg viewBox="0 0 300 300" class="ring"><defs><path id="rp" d="M150,150 m-122,0 a122,122 0 1,1 244,0 a122,122 0 1,1 -244,0"/></defs><text><textPath href="#rp" textLength="756" lengthAdjust="spacing">WORLD MAKING MEMBERS · FIND · PREPARE · BUILD · GIVE ·</textPath></text></svg>
+      <img src="/images/wmm-logo-white.png" width="787" height="772" alt="">
+    </div>
+    <div class="quad q3">
+      <h2>제작·기업 지원<small>BUILD</small></h2>
+      <div class="soon"><b>뭉치고 제작 상품 <em>미리보기</em></b><span>콘텐츠 상품·작업 예시·견적</span></div>
+      <a href="/business-studio/"><b>Business Studio</b><span>해외 진출 솔루션과 상담</span></a>
+      <a href="/membership/"><b>WMM 멤버십</b><span>M0 무료부터 M5 전략까지, 등급과 이용 범위</span></a>
+    </div>
+    <div class="quad q4">
+      <h2>공익과 운영<small>GIVE</small></h2>
+      <a href="https://radar.wmm-hoa.com/playground/path.html#miracle"><b>월드미라클메이커스 <em>준비 중</em></b><span>자폐 아동 피아노·힐링 지원 등 공익 프로그램 구상</span></a>
+      <a href="#gcsme"><b>GCSME 한국지사</b><span>영국 본사 공식 위임 · 해외 네트워크 연결</span></a>
+      <a href="/home?lang=ko#request"><b>상담 신청</b><span>73036396@naver.com · 범위와 비용을 먼저 안내</span></a>
+    </div>
+  </div>
+  <div class="facts"><div class="shell"><ul>
       <li><b>2021</b><span>법인 설립 · 서울</span></li>
       <li><b>193개국</b><span>GOV RADAR가 살피는 나라</span></li>
       <li><b>GCSME</b><span>영국 본사 공식 한국지사</span></li>
       <li><b>한 팀</b><span>조사부터 실행까지 한 창구</span></li>
-    </ul></div>
-  </div>
+  </ul></div></div>
 </section>
 
 <section class="letter pad" id="letter" aria-labelledby="letter-h">
@@ -204,22 +258,11 @@ p{margin:0}
       <p>정부지원사업 공고는 해마다 수천 건이 나오고, 해외에는 그보다 훨씬 많은 정부 사업과 입찰이 열립니다. 그런데 좋은 기술과 성실한 마음을 가진 대표님들이 서류 한 장, 발표 10분, 믿을 만한 현지 파트너 한 곳이 없어 기회를 놓치는 모습을 많이 보았습니다.</p>
       <p>WMM은 그 빈자리를 채우려고 만든 회사입니다. 공고를 함께 찾고, 심사위원이 읽는 순서로 사업계획서를 쓰고, 발표를 준비하고, 선정된 다음 해와 해외 시장까지 이어지는 길을 함께 설계합니다. 영국 GCSME 본사의 한국지사로서 세계 각국의 네트워크와도 연결합니다.</p>
       <p>저희는 결과를 보장한다고 말하지 않습니다. 대신 확인된 사실로 판단하고, 맡은 일의 범위와 비용을 먼저 약속하며, 끝까지 곁에 있겠습니다. 한 기업의 성장이 이웃을 돕는 힘으로 이어지는 일, WMM이 가장 하고 싶은 일입니다.</p>
-      <div class="sign"><img src="/about/ceo-lee-duk-young-sm.webp" width="64" height="64" alt=""><div><b>이덕영</b><span>월드메이킹멤버스 주식회사 대표 · GCSME 한국지사장</span></div></div>
+      <div class="sign"><div><b>이덕영</b><span>월드메이킹멤버스 주식회사 대표 · GCSME 한국지사장</span></div></div>
     </div>
   </div>
 </section>
 
-<section class="pad" id="work" aria-labelledby="work-h">
-  <div class="shell">
-    <div class="head"><h2 id="work-h">WMM이 하는 일</h2><p>필요한 만큼만 맡기실 수 있도록, 일을 네 갈래로 나눴습니다. 검색과 초안은 무료이고, 서류와 실행은 범위와 비용을 먼저 합의합니다.</p></div>
-    <div class="work">
-      <a href="/home?lang=ko"><h3>정부지원사업<small>국내·해외 지원사업</small></h3><p>공고 검색, PSST 사업계획서(한글 양식), 발표 PPT와 모의 평가, 2·3차 후속 사업 설계까지 함께합니다.</p><span class="go">자세히 →</span></a>
-      <a href="https://radar.wmm-hoa.com/"><h3>GOV RADAR<small>세계 정부 아젠다 레이더</small></h3><p>193개국 정부의 과제·예산·입찰과 전쟁·재난·사이버 위험을 매일 모아, 한국 기업이 먼저 움직일 기회를 찾습니다.</p><span class="go">레이더 열기 →</span></a>
-      <a href="/business-studio/"><h3>해외 진출<small>Business Studio · GCSME</small></h3><p>진출 진단, 현지 기준에 맞춘 영문 기업서류, 6주 시장 검증, GCSME 공식레터와 현지 파트너 연결을 돕습니다.</p><span class="go">자세히 →</span></a>
-      <a href="/membership/"><h3>WMM 멤버십<small>M0 무료 ~ M5 전략</small></h3><p>정보를 꾸준히 보는 분석 회원부터, 실제 프로젝트를 함께 움직이는 실행 파트너까지 단계별로 함께합니다.</p><span class="go">등급 보기 →</span></a>
-    </div>
-  </div>
-</section>
 
 <section class="rule pad" aria-labelledby="rule-h">
   <div class="shell">
@@ -233,7 +276,7 @@ p{margin:0}
   </div>
 </section>
 
-<section class="gc pad" aria-labelledby="gc-h">
+<section class="gc pad" id="gcsme" aria-labelledby="gc-h">
   <div class="shell gc-in">
     <div class="gc-pics">
       <figure><img src="/media/chairman.jpg" width="1600" height="1581" alt="GCSME 설립자 겸 회장 Mobin Rafiq" loading="lazy"><figcaption>Mobin Rafiq · GCSME 설립자·회장</figcaption></figure>
