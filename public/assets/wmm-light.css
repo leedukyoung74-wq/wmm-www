@@ -1,5 +1,5 @@
 /* WMM light skin (2026-11-22): 대표 지시 '바탕은 흰색'. 짙은 구간을 흰/연회색 바탕 + 남색 글자로. 사진 히어로·이미지는 그대로. */
-:root{--wl-bg:#FFFFFF;--wl-bg2:#F5F6F8;--wl-ink:#0B1526;--wl-ink2:#4A5568;--wl-line:#E3E7ED;--wl-gold:#B7800F}
+:root{--wl-bg:#FFFFFF;--wl-bg2:#F5F6F8;--wl-ink:#0A0A0A;--wl-ink2:#4A5568;--wl-line:#E3E7ED;--wl-gold:#B7800F}
 html body{background:#fff}
 /* 공통: 밝게 바꾸는 구간 */
 header.topbar,header.top,header:not([class]),.wmm-worlds__card--business,.service-card.featured,.commercial-measures,.membership-editorial,.chairman-card,.korea-link,section.intel,.country-panel,.news-panel,

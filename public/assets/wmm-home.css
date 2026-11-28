@@ -1,5 +1,5 @@
 /* WMM 정부지원사업 홈 (2026-11-23) — 네이비·화이트 + 직인 빨강 하나 */
-:root{--ink:#0B1526;--ink2:#14233D;--text:#0B1526;--muted:#4B5567;--line:#DCE1E8;--tone:#F3F5F8;--paper:#fff;--seal:#C3262E;--seal-d:#A31E25;--w:1200px;color-scheme:light}
+:root{--ink:#0A0A0A;--ink2:#1A1A1A;--text:#0A0A0A;--muted:#4B5567;--line:#DCE1E8;--tone:#F3F5F8;--paper:#fff;--seal:#B7862C;--seal-d:#9C7224;--w:1200px;color-scheme:light}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--text);font-family:"WMM Nexon Lv1","NEXON Lv1 Gothic",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:17px;line-height:1.65;word-break:keep-all;overflow-wrap:break-word}
@@ -63,7 +63,7 @@ section{scroll-margin-top:72px}
 .search label{display:flex;flex-direction:column;gap:7px;font-size:14px;font-weight:700}
 .search-row{display:flex;gap:10px}
 input,select,textarea{font:inherit;font-size:16px;color:var(--text);background:#fff;border:1.5px solid #C9D0DA;border-radius:8px;padding:12px 14px;width:100%;min-width:0}
-input:focus,select:focus,textarea:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(11,21,38,.12)}
+input:focus,select:focus,textarea:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(10,10,10,.12)}
 textarea{resize:vertical;line-height:1.55}
 .search-row input{flex:1}
 .filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}
@@ -200,7 +200,7 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
 .ask-form fieldset{display:flex;flex-direction:column;gap:16px}
 
 /* 바닥 */
-.foot{background:#060D19;color:#fff;padding:48px 0 36px}
+.foot{background:#050505;color:#fff;padding:48px 0 36px}
 .foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
 .foot .brand{font-size:20px}
 .foot nav{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:14.5px}
