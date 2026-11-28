@@ -11,7 +11,7 @@ var D={
 "해외 정부 사업·입찰 · 상세는 회원가입 후":"Foreign government programmes and tenders · details after sign-up","WMM 회사 홈페이지":"WMM company site","회사와 그룹 서비스 소개":"The company and its group services",
 "신청과 사업 준비":"Apply and prepare","신청 준비와 사업계획서":"Application and business plan","자격·마감·증빙 확인, PSST 초안":"Eligibility, deadlines and documents, plus a PSST draft",
 "WMM 플레이그라운드":"WMM Playground","아이디어를 7일 동안 직접 실천":"Put an idea into practice for 7 days","미리보기":"Preview","AI 도구 비교와 업무 지시문":"AI tool comparisons and work prompts",
-"제작·기업 지원":"Production and business support","뭉치고 제작 상품":"Mungchigo production","콘텐츠 상품·작업 예시·견적":"Content products, samples and quotes","해외 진출 솔루션과 상담":"Market-entry solutions and consultation",
+"제작·기업 지원":"Production and business support","뭉치고 제작 상품":"Mungchigo production","콘텐츠 상품·작업 예시·견적":"Content products, samples and quotes","제안서·PPT, 웹사이트, 업무자동화 프로젝트":"Proposals and decks, websites and workflow automation projects","비즈니스 스튜디오":"Business Studio",
 "WMM 멤버십":"WMM Membership","M0 무료부터 M5 전략까지, 등급과 이용 범위":"From free M0 to strategic M5: grades and scope",
 "공익과 운영":"Giving and operations","월드미라클메이커스":"World Miracles Makers","준비 중":"Coming soon","자폐 아동 피아노·힐링 지원 등 공익 프로그램 구상":"Planned public-benefit programmes, including piano and healing support for autistic children",
 "GCSME 한국지사":"GCSME Korea Branch","영국 본사 공식 위임 · 해외 네트워크 연결":"Officially authorised by the UK headquarters · international network","73036396@naver.com · 범위와 비용을 먼저 안내":"73036396@naver.com · we confirm scope and cost first",
